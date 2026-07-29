@@ -1,26 +1,22 @@
 # SOMOSUM — site público
 
-Landing + privacidade + termos para OAuth Google e divulgação do produto.
+https://rabbitvisual.github.io/somosum-site/
 
-**Live:** https://rabbitvisual.github.io/somosum-site/
+## Páginas
 
 | Página | URL |
 |---|---|
-| Início | https://rabbitvisual.github.io/somosum-site/ |
-| Privacidade | https://rabbitvisual.github.io/somosum-site/privacidade.html |
-| Termos | https://rabbitvisual.github.io/somosum-site/termos.html |
+| Início | `/` |
+| O que oferece | `/produto.html` |
+| Como usar | `/como-usar.html` |
+| Download | `/download.html` |
+| Privacidade | `/privacidade.html` |
+| Termos | `/termos.html` |
 
-## Google Cloud OAuth
+## Logo oficial
 
-| Campo | Valor |
-|---|---|
-| Nome | SOMOSUM |
-| Página inicial | https://rabbitvisual.github.io/somosum-site/ |
-| Privacidade | https://rabbitvisual.github.io/somosum-site/privacidade.html |
-| Termos | https://rabbitvisual.github.io/somosum-site/termos.html |
-| Domínio autorizado | `github.io` |
-| Logo OAuth (120×120) | `assets/logo-oauth-120.png` |
+Sempre `view/IMG/LOGO/SOMOSUM.png` (PNG transparente) → `assets/SOMOSUM.png` e derivados.
 
-## Download do Setup.exe
+## Quando o Setup.exe estiver pronto
 
-Quando o instalador estiver no Drive, atualize o botão `#download-btn` em `index.html` com o link público.
+Em `download.html`, troque o `href` e o texto do `#download-btn` pelo link do Drive.
