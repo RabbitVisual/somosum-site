@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Política de Privacidade — SOMOSUM</title>
+  <meta name="description" content="Política de Privacidade do SOMOSUM e do backup opcional via Google Drive.">
+  <meta name="theme-color" content="#070b14">
+  <link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Sora:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+  <header class="wrap site-header">
+    <a class="brand" href="index.html">
+      <img src="assets/logo.svg" width="40" height="40" alt="">
+      <strong>SOMOSUM</strong>
+    </a>
+    <nav class="nav" aria-label="Principal">
+      <a href="index.html">Início</a>
+      <a href="privacidade.html" aria-current="page">Privacidade</a>
+      <a href="termos.html">Termos</a>
+    </nav>
+  </header>
+
+  <main class="wrap legal">
+    <p class="meta"><a href="index.html">← Voltar</a></p>
+    <h1>Política de Privacidade</h1>
+    <p class="meta">Última atualização: 29 de julho de 2026 · Responsável: Reinan Rodrigues (Rabbit Visual) · Contato: <a href="mailto:r.rodriguesjs@gmail.com">r.rodriguesjs@gmail.com</a></p>
+
+    <article>
+      <p>Esta Política descreve como o aplicativo desktop <strong>SOMOSUM</strong> trata informações quando você usa o software e, opcionalmente, o recurso de backup com Google Drive.</p>
+
+      <h2>1. Quem somos</h2>
+      <p>O SOMOSUM é um software de projeção para igrejas, desenvolvido por Reinan Rodrigues / Rabbit Visual. O aplicativo opera principalmente de forma local no computador do usuário.</p>
+
+      <h2>2. Dados processados no computador</h2>
+      <p>Conteúdo de culto (letras, Bíblia, mídia, preferências e bibliotecas) fica armazenado localmente nas pastas de dados do aplicativo no seu equipamento. Esse conteúdo não é enviado automaticamente a servidores da Rabbit Visual.</p>
+
+      <h2>3. Backup opcional com Google Drive</h2>
+      <p>Se você instalar e usar o plugin de backup Google Drive, o SOMOSUM solicitará autorização OAuth da Google para:</p>
+      <ul>
+        <li><code>https://www.googleapis.com/auth/drive.file</code> — criar, ler e atualizar <strong>apenas arquivos criados ou abertos pelo SOMOSUM</strong> no Google Drive da conta que você conectar (não pedimos acesso ao Drive inteiro);</li>
+        <li><code>https://www.googleapis.com/auth/userinfo.email</code> — identificar o e-mail da conta Google conectada, para exibir no aplicativo qual conta está autorizada.</li>
+      </ul>
+      <p>Finalidade: gerar um arquivo de backup (por exemplo ZIP) no Drive do usuário e permitir restauração posterior. O espaço e os arquivos pertencem à conta Google da igreja/usuário.</p>
+
+      <h2>4. O que não fazemos</h2>
+      <ul>
+        <li>Não vendemos dados pessoais nem conteúdo de culto;</li>
+        <li>Não usamos dados do Google Drive para publicidade;</li>
+        <li>Não acessamos pastas ou arquivos do Drive que não tenham sido criados/abertos pelo SOMOSUM via o escopo <code>drive.file</code>;</li>
+        <li>Não exigimos conta Google para usar as funções locais de projeção.</li>
+      </ul>
+
+      <h2>5. Tokens e credenciais</h2>
+      <p>Tokens de acesso/atualização do Google ficam armazenados de forma local e protegida no ambiente do aplicativo, apenas para manter a sessão de backup. Credenciais OAuth do aplicativo (client ID/secret do desenvolvedor) não são expostas na interface do usuário.</p>
+
+      <h2>6. Compartilhamento com terceiros</h2>
+      <p>Ao usar o Google Drive, o processamento de armazenamento ocorre nos serviços da Google, sob as políticas da Google. A Rabbit Visual não opera o armazenamento em nuvem do seu backup.</p>
+
+      <h2>7. Retenção e exclusão</h2>
+      <p>Dados locais permanecem até você apagá-los ou desinstalar o app. Arquivos de backup no Drive podem ser removidos por você no próprio Google Drive. Para revogar o acesso OAuth: <a href="https://myaccount.google.com/permissions" rel="noopener" target="_blank">myaccount.google.com/permissions</a> — remova “SOMOSUM” (ou o nome exibido na tela de consentimento).</p>
+
+      <h2>8. Crianças</h2>
+      <p>O produto é destinado a uso institucional por igrejas e operadores adultos. Não coletamos intencionalmente dados de crianças.</p>
+
+      <h2>9. Segurança</h2>
+      <p>Adotamos medidas razoáveis no software (armazenamento local protegido, escopos mínimos, callback OAuth local). Nenhum sistema é 100% seguro; mantenha o PC e a conta Google protegidos.</p>
+
+      <h2>10. Alterações</h2>
+      <p>Podemos atualizar esta Política. A data no topo desta página indica a versão vigente. Mudanças relevantes no uso de dados do Google serão refletidas aqui e, quando aplicável, na tela de consentimento OAuth.</p>
+
+      <h2>11. Contato</h2>
+      <p>Dúvidas sobre privacidade ou consentimento OAuth: <a href="mailto:r.rodriguesjs@gmail.com">r.rodriguesjs@gmail.com</a>.</p>
+
+      <h2>12. English summary (for Google reviewers)</h2>
+      <p>SOMOSUM is a local Windows desktop app for church projection. Optional Google Drive backup uses OAuth scopes <code>drive.file</code> and <code>userinfo.email</code> solely to create/read/update backup files owned by the user in their own Drive and to show which account is connected. We do not sell user data, do not use Drive data for ads, and do not request full Drive access. Users can revoke access at Google Account permissions.</p>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <span>© 2026 SOMOSUM · Rabbit Visual</span>
+      <nav aria-label="Rodapé">
+        <a href="index.html">Início</a>
+        <a href="termos.html">Termos</a>
+        <a href="mailto:r.rodriguesjs@gmail.com">Contato</a>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>
