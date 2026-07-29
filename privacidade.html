@@ -5,36 +5,43 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Política de Privacidade — SOMOSUM</title>
   <meta name="description" content="Política de Privacidade do SOMOSUM e do backup opcional via Google Drive.">
-  <meta name="theme-color" content="#070b14">
-  <link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+  <meta name="theme-color" content="#070708">
+  <link rel="icon" href="assets/somosum.ico" type="image/x-icon" sizes="any">
+  <link rel="icon" href="assets/logo-oauth-120.png" type="image/png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Sora:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600&family=Syne:wght@600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/site.css">
 </head>
 <body>
-  <header class="wrap site-header">
-    <a class="brand" href="index.html">
-      <img src="assets/logo.svg" width="40" height="40" alt="">
-      <strong>SOMOSUM</strong>
-    </a>
-    <nav class="nav" aria-label="Principal">
-      <a href="index.html">Início</a>
-      <a href="privacidade.html" aria-current="page">Privacidade</a>
-      <a href="termos.html">Termos</a>
-    </nav>
+  <header class="site-header" style="position:relative;background:rgba(7,7,8,.85);backdrop-filter:blur(10px)">
+    <div class="wrap">
+      <a class="brand" href="index.html">
+        <img src="assets/logo-nav.png" width="42" height="42" alt="">
+        <span>SOMOSUM</span>
+      </a>
+      <nav class="nav" aria-label="Principal">
+        <a href="index.html">Início</a>
+        <a href="privacidade.html" aria-current="page">Privacidade</a>
+        <a href="termos.html">Termos</a>
+      </nav>
+    </div>
   </header>
 
-  <main class="wrap legal">
-    <p class="meta"><a href="index.html">← Voltar</a></p>
-    <h1>Política de Privacidade</h1>
-    <p class="meta">Última atualização: 29 de julho de 2026 · Responsável: Reinan Rodrigues (Rabbit Visual) · Contato: <a href="mailto:r.rodriguesjs@gmail.com">r.rodriguesjs@gmail.com</a></p>
+  <div class="legal-hero">
+    <div class="wrap">
+      <p class="meta"><a href="index.html">← Voltar ao início</a></p>
+      <h1>Política de Privacidade</h1>
+      <p class="meta">Última atualização: 29 de julho de 2026 · Reinan Rodrigues (Rabbit Visual) · <a href="mailto:r.rodriguesjs@gmail.com">r.rodriguesjs@gmail.com</a></p>
+    </div>
+  </div>
 
+  <main class="wrap legal">
     <article>
       <p>Esta Política descreve como o aplicativo desktop <strong>SOMOSUM</strong> trata informações quando você usa o software e, opcionalmente, o recurso de backup com Google Drive.</p>
 
       <h2>1. Quem somos</h2>
-      <p>O SOMOSUM é um software de projeção para igrejas, desenvolvido por Reinan Rodrigues / Rabbit Visual. O aplicativo opera principalmente de forma local no computador do usuário.</p>
+      <p>O SOMOSUM (SOMOS UM) é um software de projeção para igrejas, desenvolvido por Reinan Rodrigues / Rabbit Visual. O aplicativo opera principalmente de forma local no computador do usuário.</p>
 
       <h2>2. Dados processados no computador</h2>
       <p>Conteúdo de culto (letras, Bíblia, mídia, preferências e bibliotecas) fica armazenado localmente nas pastas de dados do aplicativo no seu equipamento. Esse conteúdo não é enviado automaticamente a servidores da Rabbit Visual.</p>
@@ -45,7 +52,7 @@
         <li><code>https://www.googleapis.com/auth/drive.file</code> — criar, ler e atualizar <strong>apenas arquivos criados ou abertos pelo SOMOSUM</strong> no Google Drive da conta que você conectar (não pedimos acesso ao Drive inteiro);</li>
         <li><code>https://www.googleapis.com/auth/userinfo.email</code> — identificar o e-mail da conta Google conectada, para exibir no aplicativo qual conta está autorizada.</li>
       </ul>
-      <p>Finalidade: gerar um arquivo de backup (por exemplo ZIP) no Drive do usuário e permitir restauração posterior. O espaço e os arquivos pertencem à conta Google da igreja/usuário.</p>
+      <p>Finalidade: gerar um arquivo de backup no Drive do usuário e permitir restauração posterior. O espaço e os arquivos pertencem à conta Google da igreja/usuário.</p>
 
       <h2>4. O que não fazemos</h2>
       <ul>

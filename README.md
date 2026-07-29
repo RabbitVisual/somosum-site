@@ -1,21 +1,26 @@
-# SOMOSUM — site público (OAuth / GitHub Pages)
+# SOMOSUM — site público
 
-Página oficial usada na tela de consentimento Google OAuth do SOMOSUM.
+Landing + privacidade + termos para OAuth Google e divulgação do produto.
 
-## URLs (após Pages ativo)
+**Live:** https://rabbitvisual.github.io/somosum-site/
 
-- Início: https://rabbitvisual.github.io/somosum-site/
-- Privacidade: https://rabbitvisual.github.io/somosum-site/privacidade.html
-- Termos: https://rabbitvisual.github.io/somosum-site/termos.html
+| Página | URL |
+|---|---|
+| Início | https://rabbitvisual.github.io/somosum-site/ |
+| Privacidade | https://rabbitvisual.github.io/somosum-site/privacidade.html |
+| Termos | https://rabbitvisual.github.io/somosum-site/termos.html |
 
-## Google Cloud — preencher
+## Google Cloud OAuth
 
 | Campo | Valor |
 |---|---|
-| Nome do app | SOMOSUM |
+| Nome | SOMOSUM |
 | Página inicial | https://rabbitvisual.github.io/somosum-site/ |
-| Política de Privacidade | https://rabbitvisual.github.io/somosum-site/privacidade.html |
-| Termos de Serviço | https://rabbitvisual.github.io/somosum-site/termos.html |
+| Privacidade | https://rabbitvisual.github.io/somosum-site/privacidade.html |
+| Termos | https://rabbitvisual.github.io/somosum-site/termos.html |
 | Domínio autorizado | `github.io` |
+| Logo OAuth (120×120) | `assets/logo-oauth-120.png` |
 
-Verifique `github.io` (ou o site) no Google Search Console com a conta dona do projeto Cloud.
+## Download do Setup.exe
+
+Quando o instalador estiver no Drive, atualize o botão `#download-btn` em `index.html` com o link público.
