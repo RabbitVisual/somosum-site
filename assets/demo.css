@@ -1,0 +1,505 @@
+/* Demo UI — mockups fiéis ao Controle / Projeção / Stage / Remote */
+.demo-shell {
+  --demo-bg: #0c0c10;
+  --demo-panel: #14141a;
+  --demo-line: rgba(255, 255, 255, 0.08);
+  --demo-gold: #d4c68d;
+  --demo-muted: rgba(246, 244, 241, 0.65);
+  --demo-coral: #ff6b5c;
+  border-radius: 1.25rem;
+  border: 1px solid var(--demo-line);
+  background: var(--demo-bg);
+  overflow: hidden;
+  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.45);
+  font-family: "Manrope", system-ui, sans-serif;
+  font-size: 0.82rem;
+  color: #f6f4f1;
+}
+
+.demo-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  margin-bottom: 1.25rem;
+}
+
+.demo-tab {
+  appearance: none;
+  border: 1px solid var(--line, rgba(255, 255, 255, 0.08));
+  background: rgba(255, 255, 255, 0.03);
+  color: var(--muted, rgba(246, 244, 241, 0.7));
+  border-radius: 999px;
+  padding: 0.45rem 0.95rem;
+  font: inherit;
+  font-weight: 600;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: border-color 0.2s, color 0.2s, background 0.2s;
+}
+
+.demo-tab:hover {
+  color: #fff;
+  border-color: rgba(255, 140, 110, 0.35);
+}
+
+.demo-tab.is-active {
+  background: linear-gradient(135deg, #ff7a62, #e43d3d);
+  border-color: transparent;
+  color: #fff;
+}
+
+.demo-panel {
+  display: none;
+}
+
+.demo-panel.is-active {
+  display: block;
+}
+
+.demo-caption {
+  margin: 1rem 0 0;
+  color: var(--muted, rgba(246, 244, 241, 0.7));
+  font-size: 0.95rem;
+  max-width: 42rem;
+}
+
+/* —— Controle Ao vivo —— */
+.demo-control {
+  display: grid;
+  grid-template-columns: 3.6rem 11rem 1fr 12rem;
+  min-height: 320px;
+}
+
+.demo-side {
+  background: #0a0a0e;
+  border-right: 1px solid var(--demo-line);
+  padding: 0.55rem 0.3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  align-items: center;
+}
+
+.demo-side span {
+  width: 2.2rem;
+  height: 2.2rem;
+  border-radius: 0.55rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.65rem;
+  color: var(--demo-muted);
+  border: 1px solid transparent;
+}
+
+.demo-side span.is-on {
+  background: rgba(255, 92, 92, 0.14);
+  color: var(--demo-gold);
+  border-color: rgba(212, 198, 141, 0.25);
+}
+
+.demo-order {
+  background: var(--demo-panel);
+  border-right: 1px solid var(--demo-line);
+  padding: 0.65rem;
+  overflow: auto;
+}
+
+.demo-order h4 {
+  margin: 0 0 0.55rem;
+  font-size: 0.7rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--demo-gold);
+  font-weight: 700;
+}
+
+.demo-order-item {
+  padding: 0.45rem 0.5rem;
+  border-radius: 0.45rem;
+  margin-bottom: 0.25rem;
+  border: 1px solid transparent;
+  color: var(--demo-muted);
+  cursor: pointer;
+}
+
+.demo-order-item small {
+  display: block;
+  font-size: 0.65rem;
+  opacity: 0.7;
+}
+
+.demo-order-item.is-active {
+  background: rgba(255, 92, 92, 0.12);
+  border-color: rgba(255, 140, 110, 0.35);
+  color: #fff;
+}
+
+.demo-center {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.demo-preview {
+  flex: 1;
+  margin: 0.65rem;
+  border-radius: 0.75rem;
+  background:
+    radial-gradient(ellipse 60% 50% at 50% 40%, rgba(255, 92, 92, 0.18), transparent 70%),
+    linear-gradient(160deg, #1a1520, #0d0d12);
+  border: 1px solid var(--demo-line);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 1.25rem;
+  position: relative;
+}
+
+.demo-preview .on-air {
+  position: absolute;
+  top: 0.55rem;
+  left: 0.65rem;
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  color: #ff8a6a;
+}
+
+.demo-preview h3 {
+  margin: 0 0 0.4rem;
+  font-family: "Fraunces", Georgia, serif;
+  font-size: 1.35rem;
+  font-weight: 600;
+}
+
+.demo-preview p {
+  margin: 0;
+  color: var(--demo-muted);
+  max-width: 16rem;
+  line-height: 1.45;
+}
+
+.demo-dock {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.55rem;
+  padding: 0.55rem 0.75rem 0.75rem;
+  border-top: 1px solid var(--demo-line);
+  background: #101016;
+}
+
+.demo-dock button {
+  appearance: none;
+  min-width: 2.4rem;
+  min-height: 2.2rem;
+  padding: 0 0.75rem;
+  border-radius: 0.5rem;
+  border: 1px solid var(--demo-line);
+  background: rgba(255, 255, 255, 0.04);
+  color: #fff;
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.demo-dock button:hover {
+  border-color: rgba(255, 140, 110, 0.4);
+}
+
+.demo-dock label {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  color: var(--demo-muted);
+  font-size: 0.78rem;
+  margin-left: 0.5rem;
+}
+
+.demo-inspector {
+  background: var(--demo-panel);
+  border-left: 1px solid var(--demo-line);
+  padding: 0.75rem;
+}
+
+.demo-inspector h4 {
+  margin: 0 0 0.45rem;
+  font-size: 0.7rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--demo-gold);
+}
+
+.demo-inspector p {
+  margin: 0 0 0.55rem;
+  color: var(--demo-muted);
+  font-size: 0.78rem;
+  line-height: 1.4;
+}
+
+.demo-chip-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem;
+}
+
+.demo-chip-row span {
+  font-size: 0.65rem;
+  padding: 0.2rem 0.45rem;
+  border-radius: 999px;
+  border: 1px solid var(--demo-line);
+  color: var(--demo-muted);
+}
+
+/* —— Dual: Control + Screen —— */
+.demo-dual {
+  display: grid;
+  grid-template-columns: 1.35fr 1fr;
+  gap: 0.75rem;
+  padding: 0.75rem;
+  background: #0a0a0e;
+}
+
+.demo-screen {
+  aspect-ratio: 16 / 9;
+  border-radius: 0.65rem;
+  border: 1px solid var(--demo-line);
+  background: linear-gradient(160deg, #1c1424, #0a0a0e);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 1rem;
+  position: relative;
+}
+
+.demo-screen .label {
+  position: absolute;
+  top: 0.4rem;
+  right: 0.5rem;
+  font-size: 0.6rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--demo-gold);
+}
+
+.demo-screen h3 {
+  margin: 0 0 0.35rem;
+  font-family: "Fraunces", Georgia, serif;
+  font-size: clamp(1rem, 2.5vw, 1.45rem);
+}
+
+.demo-screen p {
+  margin: 0;
+  color: rgba(246, 244, 241, 0.8);
+  font-size: 0.85rem;
+  max-width: 90%;
+}
+
+/* —— Stage —— */
+.demo-stage-bar {
+  display: flex;
+  gap: 0.4rem;
+  padding: 0.65rem 0.75rem;
+  border-bottom: 1px solid var(--demo-line);
+  background: #101016;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.demo-stage-bar strong {
+  margin-right: auto;
+  font-size: 0.75rem;
+  color: var(--demo-gold);
+}
+
+.demo-stage-bar button {
+  appearance: none;
+  border: 1px solid var(--demo-line);
+  background: transparent;
+  color: var(--demo-muted);
+  border-radius: 0.45rem;
+  padding: 0.35rem 0.65rem;
+  font: inherit;
+  font-weight: 600;
+  font-size: 0.75rem;
+  cursor: pointer;
+}
+
+.demo-stage-bar button.is-active {
+  background: rgba(212, 198, 141, 0.12);
+  border-color: rgba(212, 198, 141, 0.4);
+  color: var(--demo-gold);
+}
+
+.demo-stage-body {
+  min-height: 220px;
+  padding: 1.25rem 1.5rem;
+  display: grid;
+  gap: 0.75rem;
+  align-content: center;
+}
+
+.demo-stage-body[data-layout="singer"] {
+  text-align: center;
+  background: radial-gradient(ellipse 50% 60% at 50% 50%, rgba(255, 92, 92, 0.1), transparent 70%);
+}
+
+.demo-stage-body[data-layout="singer"] .lyrics-line {
+  font-family: "Fraunces", Georgia, serif;
+  font-size: 1.35rem;
+  line-height: 1.5;
+}
+
+.demo-stage-body[data-layout="musician"] {
+  grid-template-columns: 1fr 1fr;
+  background: #121218;
+}
+
+.demo-stage-body[data-layout="musician"] .chord {
+  font-family: ui-monospace, monospace;
+  color: var(--demo-gold);
+  font-size: 0.9rem;
+  white-space: pre-wrap;
+}
+
+.demo-stage-body[data-layout="preacher"] {
+  background: #0e1218;
+}
+
+.demo-stage-body[data-layout="preacher"] .tele {
+  border-left: 3px solid var(--demo-coral);
+  padding-left: 0.85rem;
+  color: var(--demo-muted);
+  line-height: 1.55;
+}
+
+/* —— Remote —— */
+.demo-remote {
+  max-width: 280px;
+  margin: 0 auto;
+  padding: 1rem;
+  background: #121218;
+}
+
+.demo-remote-status {
+  text-align: center;
+  margin-bottom: 0.85rem;
+  color: var(--demo-muted);
+  font-size: 0.78rem;
+}
+
+.demo-remote-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5rem;
+}
+
+.demo-remote-grid button {
+  appearance: none;
+  min-height: 3rem;
+  border-radius: 0.75rem;
+  border: 1px solid var(--demo-line);
+  background: rgba(255, 255, 255, 0.04);
+  color: #fff;
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.demo-remote-grid button.primary {
+  grid-column: 1 / -1;
+  background: linear-gradient(135deg, #ff7a62, #e43d3d);
+  border-color: transparent;
+}
+
+.demo-remote-grid button.warn {
+  grid-column: 1 / -1;
+  border-color: rgba(255, 140, 110, 0.35);
+  color: #ff8a6a;
+}
+
+/* —— Flow steps —— */
+.flow-ops {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 0.85rem;
+  counter-reset: ops;
+}
+
+.flow-ops article {
+  position: relative;
+  padding: 1.25rem 1.1rem;
+  border-radius: 1.1rem;
+  border: 1px solid var(--line, rgba(255, 255, 255, 0.08));
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.flow-ops article::before {
+  counter-increment: ops;
+  content: counter(ops);
+  display: inline-flex;
+  width: 1.75rem;
+  height: 1.75rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 999px;
+  margin-bottom: 0.65rem;
+  background: linear-gradient(135deg, #ff7a62, #e43d3d);
+  color: #fff;
+  font-weight: 700;
+  font-size: 0.8rem;
+}
+
+.flow-ops h3 {
+  margin: 0 0 0.35rem;
+  font-family: "Fraunces", Georgia, serif;
+  font-size: 1.1rem;
+}
+
+.flow-ops p {
+  margin: 0;
+  color: var(--muted, rgba(246, 244, 241, 0.7));
+  font-size: 0.9rem;
+}
+
+@media (max-width: 960px) {
+  .demo-control {
+    grid-template-columns: 1fr;
+  }
+
+  .demo-side {
+    flex-direction: row;
+    justify-content: center;
+    border-right: none;
+    border-bottom: 1px solid var(--demo-line);
+  }
+
+  .demo-order,
+  .demo-inspector {
+    border: none;
+    border-bottom: 1px solid var(--demo-line);
+  }
+
+  .demo-dual {
+    grid-template-columns: 1fr;
+  }
+
+  .demo-stage-body[data-layout="musician"] {
+    grid-template-columns: 1fr;
+  }
+
+  .flow-ops {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 560px) {
+  .flow-ops {
+    grid-template-columns: 1fr;
+  }
+}

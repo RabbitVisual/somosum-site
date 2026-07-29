@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Experiência SOMOSUM — veja o Controle, Projeção e Stage</title>
+  <meta name="description" content="Tour interativo do SOMOSUM: monte a ordem uma vez, projete com ← → no Ao vivo, Stage Cantor/Músico/Pregador e Remote na LAN.">
+  <meta name="google-site-verification" content="nLejR0vznH-2jq-zF15tfKEdONbFsd5ylkOThsWnRHE">
+  <meta name="theme-color" content="#09090b">
+  <meta property="og:title" content="Experiência SOMOSUM — demo interativa">
+  <meta property="og:description" content="Entenda o fluxo real: ordem pré-pronta, setas no Ao vivo, Stage e Remote.">
+  <meta property="og:image" content="https://rabbitvisual.github.io/somosum-site/assets/capa-hero.jpg">
+  <meta property="og:url" content="https://rabbitvisual.github.io/somosum-site/experiencia.html">
+  <link rel="canonical" href="https://rabbitvisual.github.io/somosum-site/experiencia.html">
+  <link rel="icon" href="assets/favicon-64.png" type="image/png">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/site.css">
+  <link rel="stylesheet" href="assets/demo.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="index.html">
+        <img src="assets/logo-nav.png" width="40" height="40" alt="SOMOSUM">
+        <span class="brand-text"><strong>SOMOSUM</strong><small>Somos um</small></span>
+      </a>
+      <button class="nav-toggle" type="button" aria-label="Abrir menu" aria-expanded="false"><span></span><span></span><span></span></button>
+      <nav class="nav" aria-label="Principal">
+        <a href="index.html">Início</a>
+        <a href="experiencia.html" aria-current="page">Experiência</a>
+        <a href="produto.html">Produto</a>
+        <a href="como-usar.html">Como usar</a>
+        <a href="versao.html">Versão</a>
+        <a href="download.html" class="nav-cta">Baixar</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="wrap reveal">
+        <p class="kicker">Demo interativa</p>
+        <h1>Como o culto flui no SOMOSUM</h1>
+        <p>Monte a ordem uma vez. No domingo, quem sentar no PC só projeta com as setas. Clique e experimente o mock fiel ao Controle real.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap">
+        <p class="kicker reveal">Fluxo do domingo</p>
+        <h2 class="reveal">Quatro momentos — sem quebrar a cabeça</h2>
+        <div class="flow-ops reveal" style="margin-top:1.5rem">
+          <article>
+            <h3>Montar</h3>
+            <p>Assistente de culto gera ordem pré-pronta. Você adiciona, remove, reordena, troca fundo e plugins.</p>
+          </article>
+          <article>
+            <h3>Salvar</h3>
+            <p>O culto fica na agenda. Qualquer operador abre o mesmo arquivo.</p>
+          </article>
+          <article>
+            <h3>Ao vivo ← →</h3>
+            <p>Na aba Ao vivo: ordem à esquerda, prévia no centro, setas e “Ao vivo” no dock.</p>
+          </article>
+          <article>
+            <h3>Equipe</h3>
+            <p>Stage (Cantor / Músico / Pregador) e Remote na LAN acompanham o Controle.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap">
+        <p class="kicker reveal">Painel demonstração</p>
+        <h2 class="reveal">Controle, Projeção, Stage e Remote</h2>
+        <p class="lead reveal">Mocks baseados nas telas reais do SOMOSUM (labels e layout do Console ao vivo). Use ← → para avançar a ordem.</p>
+
+        <div class="demo-tabs reveal" data-demo-tabs>
+          <button type="button" class="demo-tab is-active" data-demo-tab="aovivo">Ao vivo + Projeção</button>
+          <button type="button" class="demo-tab" data-demo-tab="montar">Montar ordem</button>
+          <button type="button" class="demo-tab" data-demo-tab="stage">Stage · 3 perfis</button>
+          <button type="button" class="demo-tab" data-demo-tab="remote">Remote</button>
+        </div>
+
+        <div class="demo-panel is-active reveal" data-demo-panel="aovivo">
+          <div class="demo-shell demo-dual" data-demo-root>
+            <div class="demo-control" style="border:1px solid rgba(255,255,255,.08);border-radius:.75rem;overflow:hidden;min-height:300px">
+              <aside class="demo-side" aria-hidden="true">
+                <span class="is-on" title="Ao vivo">LIVE</span>
+                <span title="Cultos">CUL</span>
+                <span title="Louvores">LOU</span>
+                <span title="Bíblia">BIB</span>
+                <span title="Mídia">MID</span>
+              </aside>
+              <div class="demo-order">
+                <h4>Ordem do culto</h4>
+                <div data-demo-order></div>
+              </div>
+              <div class="demo-center">
+                <div class="demo-preview">
+                  <span class="on-air">NO AR</span>
+                  <h3 data-demo-preview-title></h3>
+                  <p data-demo-preview-body></p>
+                </div>
+                <div class="demo-dock">
+                  <button type="button" data-demo-prev title="Anterior (←)">←</button>
+                  <button type="button" data-demo-next title="Próximo (→)">→</button>
+                  <label><input type="checkbox" checked disabled> Ao vivo</label>
+                </div>
+              </div>
+              <aside class="demo-inspector">
+                <h4>Inspetor</h4>
+                <p data-demo-meta></p>
+                <p>Duplo clique em Louvores / Bíblia / Mídia adiciona à ordem. Aqui você só navega.</p>
+                <div class="demo-chip-row">
+                  <span>← → teclado</span>
+                  <span>Ctrl+S salva</span>
+                </div>
+              </aside>
+            </div>
+            <div class="demo-screen" aria-label="Projeção">
+              <span class="label">Projeção</span>
+              <h3 data-demo-screen-title></h3>
+              <p data-demo-screen-body style="white-space:pre-line"></p>
+            </div>
+          </div>
+          <p class="demo-caption">No domingo o operador quase não “monta” nada: a ordem já está salva. O trabalho é avançar com as setas e manter o Ao vivo ligado.</p>
+        </div>
+
+        <div class="demo-panel reveal" data-demo-panel="montar">
+          <div class="demo-shell" style="padding:1.25rem 1.35rem">
+            <p class="kicker" style="margin:0 0 .5rem">Cultos · assistente</p>
+            <h3 style="margin:0 0 .75rem;font-family:Fraunces,Georgia,serif;font-size:1.35rem">Ordem pré-estabelecida</h3>
+            <p style="color:rgba(246,244,241,.7);margin:0 0 1rem;max-width:36rem">O assistente monta blocos típicos (boas-vindas, louvor, Bíblia, mensagem…). Depois você:</p>
+            <ul class="feature-grid" style="margin:0">
+              <li class="feature-card"><h3>Adiciona / remove</h3><p>Itens na ordem do culto com um clique.</p></li>
+              <li class="feature-card"><h3>Reordena</h3><p>Arrasta o ritmo do culto sem refazer tudo.</p></li>
+              <li class="feature-card"><h3>Troca fundo</h3><p>Mídia da biblioteca — vídeos e imagens fáceis de instalar.</p></li>
+              <li class="feature-card"><h3>Plugins &amp; hinários</h3><p>Loja: PIX, avisos, pedidos; packs CC/HC conforme a igreja.</p></li>
+            </ul>
+          </div>
+          <p class="demo-caption">Louvores: busca letra e cifra. Mídia: fundos para o clima. Loja: só o que a igreja precisa — sem inchação.</p>
+        </div>
+
+        <div class="demo-panel reveal" data-demo-panel="stage">
+          <div class="demo-shell">
+            <div class="demo-stage-bar">
+              <strong>Púlpito · STAGE</strong>
+              <button type="button" class="is-active" data-stage-layout="singer">Cantor</button>
+              <button type="button" data-stage-layout="musician">Músico</button>
+              <button type="button" data-stage-layout="preacher">Pregador</button>
+            </div>
+            <div class="demo-stage-body" data-demo-stage-body data-layout="singer">
+              <div class="lyrics-line" data-demo-lyrics style="white-space:pre-line"></div>
+              <div class="chord" data-demo-chord hidden></div>
+              <div class="tele" data-demo-tele hidden></div>
+            </div>
+          </div>
+          <p class="demo-caption"><strong>Cantor</strong> foca a letra · <strong>Músico</strong> traz cifra/contexto · <strong>Pregador</strong> usa teleponto da mensagem. Não é a mesma tela para todo mundo.</p>
+        </div>
+
+        <div class="demo-panel reveal" data-demo-panel="remote">
+          <div class="demo-shell demo-remote">
+            <div class="demo-remote-status">Remote · LAN · <span data-demo-remote-now></span></div>
+            <div class="demo-remote-grid">
+              <button type="button" data-demo-prev>← Anterior</button>
+              <button type="button" class="primary" data-demo-next>Próximo →</button>
+              <button type="button" class="warn" data-demo-blank>Tela preta</button>
+            </div>
+          </div>
+          <p class="demo-caption">No celular, na rede da igreja: avançar, blank e atalhos — sem sentar no PC do Controle.</p>
+        </div>
+
+        <div class="cta-row" style="margin-top:2rem">
+          <a class="btn btn-primary" href="download.html">Baixar e testar de verdade</a>
+          <a class="btn btn-secondary" href="index.html#comparativo">Ver comparativo técnico</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="assets/logo-nav.png" width="56" height="56" alt="SOMOSUM">
+          <p>SOMOSUM — projeção de culto local para igrejas.</p>
+        </div>
+        <div class="footer-col">
+          <h3>Produto</h3>
+          <a href="experiencia.html">Experiência</a>
+          <a href="produto.html">O que oferece</a>
+          <a href="como-usar.html">Como usar</a>
+          <a href="download.html">Baixar</a>
+        </div>
+        <div class="footer-col">
+          <h3>Legal</h3>
+          <a href="privacidade.html">Privacidade</a>
+          <a href="termos.html">Termos</a>
+        </div>
+        <div class="footer-col">
+          <h3>Contato</h3>
+          <a href="mailto:r.rodriguesjs@gmail.com">r.rodriguesjs@gmail.com</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Rabbit Visual · SOMOSUM</span>
+        <span>Demo ilustrativa — UI fiel ao app</span>
+      </div>
+    </div>
+  </footer>
+  <script src="assets/site.js" defer></script>
+  <script src="assets/demo.js" defer></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const body = document.querySelector("[data-demo-stage-body]");
+      const chord = document.querySelector("[data-demo-chord]");
+      const tele = document.querySelector("[data-demo-tele]");
+      const lyrics = document.querySelector("[data-demo-lyrics]");
+      document.querySelectorAll("[data-stage-layout]").forEach((btn) => {
+        btn.addEventListener("click", () => {
+          const layout = btn.dataset.stageLayout;
+          if (!body) return;
+          if (lyrics) lyrics.hidden = layout === "preacher";
+          if (chord) chord.hidden = layout !== "musician";
+          if (tele) tele.hidden = layout !== "preacher";
+        });
+      });
+    });
+  </script>
+</body>
+</html>

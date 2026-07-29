@@ -3,9 +3,9 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>SOMOSUM — projeção de culto offline para igrejas (Windows)</title>
-  <meta name="description" content="SOMOSUM: aplicativo gratuito para igrejas projetarem letras, Bíblia e mídia no culto. 100% offline, Controle, Projeção, Stage e Remote. Alternativa clara ao Holyrics no Windows.">
-  <meta name="keywords" content="SOMOSUM, projeção culto, Holyrics alternativa, letras igreja, Bíblia projetor, software igreja Windows, Remote culto, Stage púlpito">
+  <title>SOMOSUM — monte uma vez, projete com as setas</title>
+  <meta name="description" content="SOMOSUM: ordem do culto pré-pronta, Ao vivo com ← →, Louvores, Mídia, Loja e Stage Cantor/Músico/Pregador. Gratuito e offline no Windows — comparação justa com Holyrics.">
+  <meta name="keywords" content="SOMOSUM, projeção culto, Holyrics, letras igreja, Bíblia projetor, software igreja Windows, Remote culto, Stage púlpito, ordem do culto">
   <meta name="author" content="Rabbit Visual · Reinan Rodrigues">
   <meta name="robots" content="index, follow">
   <meta name="google-site-verification" content="nLejR0vznH-2jq-zF15tfKEdONbFsd5ylkOThsWnRHE">
@@ -14,14 +14,14 @@
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="SOMOSUM">
   <meta property="og:locale" content="pt_BR">
-  <meta property="og:title" content="SOMOSUM — culto no projetor sem caos">
-  <meta property="og:description" content="Projeção local para igrejas: letras, Bíblia, mídia, Stage e Remote. Gratuito, offline, Windows 10/11.">
+  <meta property="og:title" content="SOMOSUM — monte uma vez, projete com as setas">
+  <meta property="og:description" content="Ordem pré-pronta. No domingo, quem sentar no PC só usa ← →. Stage, Remote e Loja — gratuito e offline.">
   <meta property="og:image" content="https://rabbitvisual.github.io/somosum-site/assets/capa-hero.jpg">
   <meta property="og:image:alt" content="SOMOSUM — projeção para cultos">
   <meta property="og:url" content="https://rabbitvisual.github.io/somosum-site/">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="SOMOSUM — projeção para cultos">
-  <meta name="twitter:description" content="Aplicativo Windows gratuito para igrejas. Offline, sincronizado e pronto para o culto.">
+  <meta name="twitter:title" content="SOMOSUM — monte uma vez, projete com as setas">
+  <meta name="twitter:description" content="Aplicativo Windows gratuito para igrejas. Ordem salva, Ao vivo com setas, Stage e Remote.">
   <meta name="twitter:image" content="https://rabbitvisual.github.io/somosum-site/assets/capa-hero.jpg">
   <link rel="canonical" href="https://rabbitvisual.github.io/somosum-site/">
   <link rel="icon" href="assets/favicon-64.png" type="image/png" sizes="64x64">
@@ -31,6 +31,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/site.css">
+  <link rel="stylesheet" href="assets/demo.css">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -53,7 +54,7 @@
           "price": "0",
           "priceCurrency": "BRL"
         },
-        "description": "Aplicativo desktop local para igrejas projetarem culto: letras, Bíblia, mídia, Stage e Remote na LAN.",
+        "description": "Aplicativo desktop local para igrejas: ordem de culto pré-pronta, Ao vivo com setas, Stage Cantor/Músico/Pregador e Remote na LAN.",
         "url": "https://rabbitvisual.github.io/somosum-site/",
         "downloadUrl": "https://drive.google.com/file/d/1PQbhJiMR1xn0FpYrkh28dzPiR6v2TEzd/view?usp=sharing",
         "image": "https://rabbitvisual.github.io/somosum-site/assets/SOMOSUM.png",
@@ -78,6 +79,7 @@
       </button>
       <nav class="nav" aria-label="Principal">
         <a href="index.html" aria-current="page">Início</a>
+        <a href="experiencia.html">Experiência</a>
         <a href="produto.html">Produto</a>
         <a href="como-usar.html">Como usar</a>
         <a href="versao.html">Versão</a>
@@ -100,23 +102,92 @@
       <div class="wrap hero-inner">
         <img class="hero-logo" src="assets/SOMOSUM.png" width="132" height="132" alt="Logo do aplicativo SOMOSUM">
         <p class="app-name-label">Aplicativo SOMOSUM</p>
-        <h1 id="hero-title">Culto no projetor sem caos</h1>
-        <p class="lede">Quando a equipe precisa de clareza, a congregação precisa ver bem — e o Wi‑Fi não pode decidir o ritmo do culto. O <strong>SOMOSUM</strong> é projeção local para igrejas: letras, Bíblia e mídia, sincronizadas no PC.</p>
+        <h1 id="hero-title">Monte uma vez. No domingo, só as setas.</h1>
+        <p class="lede">O culto fica com ordem pré-pronta. Quem sentar no PC abre <strong>Ao vivo</strong>, marca a checkbox e avança com <strong>← →</strong> — sem remontar a sequência na hora H.</p>
         <div class="cta-row">
           <a class="btn btn-primary btn-soft" href="download.html">
             <svg class="btn-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 3v12m0 0 4-4m-4 4-4-4M5 21h14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
             Baixar grátis (Windows)
           </a>
-          <a class="btn btn-secondary" href="#dor">Ver a dor que resolvemos</a>
+          <a class="btn btn-secondary" href="experiencia.html">Ver experiência interativa</a>
         </div>
-        <p class="hero-note">Versão 8.7.10 · Gratuito para igrejas · 100% offline no culto</p>
+        <p class="hero-note">Versão 8.7.10 · Gratuito · Offline no culto · Windows 10/11</p>
         <div class="anchor-nav" aria-label="Seções desta página">
-          <a href="#dor">Dor</a>
-          <a href="#solucao">Solução</a>
+          <a href="#fluxo">Fluxo</a>
+          <a href="#demo">Demo</a>
           <a href="#porque">Por que nós</a>
           <a href="#comparativo">Comparativo</a>
           <a href="#recursos">Recursos</a>
-          <a href="#passos">Como começar</a>
+          <a href="#passos">Começar</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="fluxo" aria-labelledby="fluxo-title">
+      <div class="wrap">
+        <p class="kicker reveal">Fluxo operacional</p>
+        <h2 id="fluxo-title" class="reveal">Do ensaio ao “NO AR”</h2>
+        <p class="lead reveal">Marketing alinhado ao produto real: assistente de culto, ordem salva, console Ao vivo e bibliotecas.</p>
+        <div class="flow-ops reveal" style="margin-top:1.5rem">
+          <article>
+            <h3>1 · Montar</h3>
+            <p>Assistente gera ordem pré-estabelecida (boas-vindas, louvor, Bíblia, mensagem…). Você adiciona, remove, reordena, troca fundo e plugins.</p>
+          </article>
+          <article>
+            <h3>2 · Salvar</h3>
+            <p>O culto fica pronto na agenda. Qualquer operador abre o mesmo arquivo no domingo.</p>
+          </article>
+          <article>
+            <h3>3 · Ao vivo ← →</h3>
+            <p>Ordem à esquerda, prévia no centro, dock com Anterior / Próximo e checkbox <em>Ao vivo</em>. Sem remontar.</p>
+          </article>
+          <article>
+            <h3>4 · Equipe</h3>
+            <p>Stage Cantor / Músico / Pregador e Remote na LAN — cada perfil vê o que precisa.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="demo" aria-labelledby="demo-title">
+      <div class="wrap">
+        <p class="kicker reveal">Experimente</p>
+        <h2 id="demo-title" class="reveal">Mini Controle + Projeção</h2>
+        <p class="lead reveal">Clique ← → e veja a ordem e o slide mudarem — mock fiel às labels do console real.</p>
+        <div class="demo-shell demo-dual reveal" data-demo-root style="margin-top:1.25rem">
+          <div class="demo-control" style="border:1px solid rgba(255,255,255,.08);border-radius:.75rem;overflow:hidden;min-height:280px">
+            <aside class="demo-side" aria-hidden="true">
+              <span class="is-on">LIVE</span>
+              <span>CUL</span>
+              <span>LOU</span>
+              <span>BIB</span>
+              <span>MID</span>
+            </aside>
+            <div class="demo-order">
+              <h4>Ordem do culto</h4>
+              <div data-demo-order></div>
+            </div>
+            <div class="demo-center">
+              <div class="demo-preview">
+                <span class="on-air">NO AR</span>
+                <h3 data-demo-preview-title></h3>
+                <p data-demo-preview-body></p>
+              </div>
+              <div class="demo-dock">
+                <button type="button" data-demo-prev title="Anterior">←</button>
+                <button type="button" data-demo-next title="Próximo">→</button>
+                <label><input type="checkbox" checked disabled> Ao vivo</label>
+              </div>
+            </div>
+          </div>
+          <div class="demo-screen" aria-label="Projeção">
+            <span class="label">Projeção</span>
+            <h3 data-demo-screen-title></h3>
+            <p data-demo-screen-body style="white-space:pre-line"></p>
+          </div>
+        </div>
+        <div class="cta-row" style="margin-top:1.25rem">
+          <a class="btn btn-secondary" href="experiencia.html">Tour completo · Stage e Remote</a>
         </div>
       </div>
     </section>
@@ -125,27 +196,27 @@
       <div class="wrap">
         <p class="kicker reveal">A dor real</p>
         <h2 id="dor-title" class="reveal">O que costuma atrapalhar o culto na tela</h2>
-        <p class="lead reveal">Quem já operou um projetor na igreja conhece: pressa, improvisação e ferramentas que pedem internet ou curva de aprendizado longa demais para o domingo.</p>
+        <p class="lead reveal">Pressa, improvisação e ferramentas com curva longa demais para o voluntário do domingo.</p>
         <ul class="pain-grid">
           <li class="pain-card reveal">
             <span class="ico" aria-hidden="true">!</span>
             <h3>Improviso na hora H</h3>
-            <p>A ordem muda, a letra some, o versículo atrasa — e a congregação sente o nervosismo na tela.</p>
+            <p>Remontar a ordem no PC enquanto o culto já começou — a congregação sente o nervosismo na tela.</p>
           </li>
           <li class="pain-card reveal">
             <span class="ico" aria-hidden="true">☁</span>
             <h3>Internet instável</h3>
-            <p>Wi‑Fi da igreja cai e o software “na nuvem” trava o culto. O culto não pode depender do provedor.</p>
+            <p>Wi‑Fi cai e o software “na nuvem” trava o culto. O culto não pode depender do provedor.</p>
           </li>
           <li class="pain-card reveal">
-            <span class="ico" aria-hidden="true">$</span>
-            <h3>Custo e complexidade</h3>
-            <p>Soluções conhecidas (como Holyrics) são potentes, mas podem ser caras ou pesadas para equipes enxutas.</p>
+            <span class="ico" aria-hidden="true">↕</span>
+            <h3>Curva e fluxo</h3>
+            <p>Ferramentas maduras (como Holyrics) são potentes — mas o voluntário precisa de um caminho curto: ordem pronta + setas.</p>
           </li>
           <li class="pain-card reveal">
             <span class="ico" aria-hidden="true">📱</span>
             <h3>Equipe desconectada</h3>
-            <p>Púlpito sem letra, celular sem comando útil, operador sozinho no PC — cada um no seu mundo.</p>
+            <p>Púlpito sem letra certa, celular sem comando útil, operador sozinho no PC.</p>
           </li>
           <li class="pain-card reveal">
             <span class="ico" aria-hidden="true">⏱</span>
@@ -155,7 +226,7 @@
           <li class="pain-card reveal">
             <span class="ico" aria-hidden="true">🔒</span>
             <h3>Dados da igreja</h3>
-            <p>Letras, cultos e mídias são patrimônio da congregação. Nem sempre dá para confiar tudo a terceiros.</p>
+            <p>Letras, cultos e mídias são patrimônio da congregação — local-first por padrão.</p>
           </li>
         </ul>
       </div>
@@ -163,14 +234,14 @@
 
     <section class="section" id="solucao" aria-labelledby="solucao-title">
       <div class="wrap">
-        <p class="kicker reveal">A solução</p>
-        <h2 id="solucao-title" class="reveal">Um sistema, quatro lugares no culto</h2>
-        <p class="lead reveal">O <strong>Controle</strong> é a fonte da verdade. A <strong>Projeção</strong> mostra para a igreja. O <strong>Stage</strong> apoia o púlpito. O <strong>Remote</strong> ajuda pela rede local — tudo sincronizado em tempo real.</p>
+        <p class="kicker reveal">Quatro superfícies</p>
+        <h2 id="solucao-title" class="reveal">Controle, Projeção, Stage e Remote</h2>
+        <p class="lead reveal">O <strong>Controle</strong> é a fonte da verdade. A <strong>Projeção</strong> mostra para a igreja. O <strong>Stage</strong> apoia o púlpito em três perfis. O <strong>Remote</strong> ajuda pela rede local.</p>
         <div class="flow">
           <article class="flow-card reveal">
             <span class="mark">1</span>
             <h3>Controle</h3>
-            <p>Operador monta a ordem, avança slides, Bíblia, mídia e plugins.</p>
+            <p>Cultos, Ao vivo, Louvores, Bíblia, Mídia, Designer, Loja — e o dock ← →.</p>
           </article>
           <article class="flow-card reveal">
             <span class="mark">2</span>
@@ -180,12 +251,12 @@
           <article class="flow-card reveal">
             <span class="mark">3</span>
             <h3>Stage</h3>
-            <p>Músicos e líderes acompanham a letra no púlpito, sem roubar o holofote.</p>
+            <p>Cantor (letra), Músico (cifra), Pregador (teleponto) — não é uma tela só.</p>
           </article>
           <article class="flow-card reveal">
             <span class="mark">4</span>
             <h3>Remote</h3>
-            <p>Celular ou tablet na LAN da igreja: próximo, blank, alertas e atalhos.</p>
+            <p>Celular na LAN: próximo, blank e atalhos — sem sentar no PC.</p>
           </article>
         </div>
       </div>
@@ -194,38 +265,38 @@
     <section class="section" id="porque" aria-labelledby="porque-title">
       <div class="wrap">
         <p class="kicker reveal">Por que escolher o SOMOSUM</p>
-        <h2 id="porque-title" class="reveal">Feito para o domingo brasileiro</h2>
-        <p class="lead reveal">Não vendemos “mais um painel”. Entregamos tranquilidade operacional: culto no ar, dados no PC da igreja, equipe alinhada.</p>
+        <h2 id="porque-title" class="reveal">Fluxo curto no domingo brasileiro</h2>
+        <p class="lead reveal">Não vendemos “mais um painel”. Entregamos ordem pré-montada, setas no Ao vivo e equipe alinhada — dados no PC da igreja.</p>
         <ul class="why-grid">
           <li class="why-card reveal">
             <span class="ico" aria-hidden="true">●</span>
             <h3>100% offline no culto</h3>
-            <p>Instala e cultua sem depender de internet. Google só entra no backup opcional — se a igreja quiser.</p>
+            <p>Local-first com Kestrel embutido. Google só no backup opcional.</p>
           </li>
           <li class="why-card reveal">
-            <span class="ico" aria-hidden="true">♥</span>
-            <h3>Gratuito para igrejas</h3>
-            <p>Use na sua congregação sem mensalidade para projetar. Baixe o Setup ou o ZIP portátil.</p>
+            <span class="ico" aria-hidden="true">←→</span>
+            <h3>Quem senta só projeta</h3>
+            <p>Ordem salva + checkbox Ao vivo + setas. Sem remontar na hora H.</p>
           </li>
           <li class="why-card reveal">
-            <span class="ico" aria-hidden="true">⚡</span>
-            <h3>Sync em tempo real</h3>
-            <p>WebSocket + fallback HTTP: Screen, Stage e Remote acompanham o Controle sem atraso perceptível.</p>
+            <span class="ico" aria-hidden="true">♪</span>
+            <h3>Louvores · Bíblia · Mídia</h3>
+            <p>Bibliotecas no Controle: letra/cifra, passagem e fundos — duplo clique / + Ordem.</p>
           </li>
           <li class="why-card reveal">
             <span class="ico" aria-hidden="true">🧩</span>
-            <h3>Loja de plugins</h3>
-            <p>PIX, avisos, pedidos de oração, hino por número, timer — ative o que a igreja precisa.</p>
+            <h3>Loja sob medida</h3>
+            <p>Plugins (PIX, avisos…) e packs de hinário conforme a igreja.</p>
           </li>
           <li class="why-card reveal">
-            <span class="ico" aria-hidden="true">🖥</span>
-            <h3>Windows nativo</h3>
-            <p>Instalador self-contained (.NET 8 + WebView2). Sem pedir runtime complicado ao voluntário.</p>
+            <span class="ico" aria-hidden="true">🎭</span>
+            <h3>Stage em 3 perfis</h3>
+            <p>Cantor, Músico e Pregador — layouts distintos no púlpito.</p>
           </li>
           <li class="why-card reveal">
             <span class="ico" aria-hidden="true">🛡</span>
-            <h3>Local-first</h3>
-            <p>Letras, Bíblia e cultos ficam no computador. Privacidade alinhada ao dia a dia da igreja.</p>
+            <h3>Windows nativo</h3>
+            <p>WebView2 + sync WS-first Control → Screen / Stage / Remote.</p>
           </li>
         </ul>
       </div>
@@ -233,14 +304,14 @@
 
     <section class="section" id="comparativo" aria-labelledby="comp-title">
       <div class="wrap">
-        <p class="kicker reveal">Comparativo honesto</p>
-        <h2 id="comp-title" class="reveal">SOMOSUM ao lado do Holyrics e outros</h2>
-        <p class="lead reveal">Respeitamos o Holyrics e ferramentas internacionais. A tabela abaixo ajuda a decidir com clareza — sem marketing vazio.</p>
+        <p class="kicker reveal">Comparativo técnico</p>
+        <h2 id="comp-title" class="reveal">SOMOSUM e Holyrics — ambos gratuitos no PC</h2>
+        <p class="lead reveal">Holyrics também é gratuito para projeção no Windows (contribuição voluntária; apps auxiliares iOS podem ter custo). A decisão é <strong>fluxo, arquitetura e facilidade no domingo</strong> — não preço.</p>
         <div class="compare-wrap reveal">
           <table class="compare-table">
             <thead>
               <tr>
-                <th>Critério</th>
+                <th>Eixo</th>
                 <th class="col-us">SOMOSUM</th>
                 <th>Holyrics</th>
                 <th>FreeShow / ProPresenter*</th>
@@ -248,57 +319,57 @@
             </thead>
             <tbody>
               <tr>
-                <td>Preço para igreja</td>
-                <td class="yes">Gratuito para projetar</td>
-                <td>Licença comercial típica</td>
+                <td>Preço no PC</td>
+                <td class="yes">Gratuito</td>
+                <td class="yes">Gratuito (doação opcional)</td>
                 <td>FreeShow grátis · ProPresenter pago</td>
               </tr>
               <tr>
-                <td>Culto 100% offline</td>
-                <td class="yes">Sim (local)</td>
-                <td class="yes">Sim (local)</td>
+                <td>Offline no culto</td>
+                <td class="yes">Local-first, Kestrel embutido</td>
+                <td class="yes">Offline após baixar conteúdo</td>
                 <td>Depende da edição / nuvem</td>
               </tr>
               <tr>
-                <td>Português BR / fluxo igreja BR</td>
-                <td class="yes">Nativo pt-BR</td>
-                <td class="yes">Forte no Brasil</td>
-                <td>Varia (EN / comunidades)</td>
-              </tr>
-              <tr>
-                <td>Stage (púlpito) + Remote LAN</td>
-                <td class="yes">Incluído</td>
-                <td class="yes">Ecossistema maduro</td>
-                <td>Parcial / add-ons</td>
-              </tr>
-              <tr>
-                <td>Plugins / Loja no app</td>
-                <td class="yes">Loja + packs</td>
-                <td>Recursos nativos amplos</td>
-                <td>Extensões / plugins</td>
-              </tr>
-              <tr>
-                <td>Curva para voluntário</td>
-                <td class="yes">Foco em operação simples</td>
-                <td>Rica, pode exigir treino</td>
-                <td>ProPresenter: curva alta</td>
-              </tr>
-              <tr>
-                <td>Backup Google Drive opcional</td>
-                <td class="yes">Plugin (OAuth drive.file)</td>
-                <td>Fluxos próprios</td>
+                <td>Montagem do culto</td>
+                <td class="yes">Assistente + blocos + ordem salva</td>
+                <td>Playlist/ordem do operador (ecossistema maduro)</td>
                 <td>Varia</td>
               </tr>
               <tr>
-                <td>Plataforma</td>
-                <td>Windows 10/11 x64</td>
-                <td>Windows (principal)</td>
+                <td>Operação ao vivo</td>
+                <td class="yes">Console Ao vivo: ordem + prévia + ← → / Ao vivo</td>
+                <td>Controles ricos; curva maior</td>
+                <td>ProPresenter: curva alta</td>
+              </tr>
+              <tr>
+                <td>Stage / púlpito</td>
+                <td class="yes">Perfis Cantor · Músico · Pregador</td>
+                <td>Comunicação/equipe (app)</td>
+                <td>Parcial / add-ons</td>
+              </tr>
+              <tr>
+                <td>Remote</td>
+                <td class="yes">PWA / LAN nativo</td>
+                <td>App mobile (iOS com custo em alguns casos)</td>
+                <td>Varia</td>
+              </tr>
+              <tr>
+                <td>Conteúdo extra</td>
+                <td class="yes">Loja: plugins + packs hinário/mídia</td>
+                <td>Downloads Bíblia/letras/nuvem</td>
+                <td>Extensões / plugins</td>
+              </tr>
+              <tr>
+                <td>Stack</td>
+                <td>Windows WebView2, sync WS-first</td>
+                <td>Stack própria madura BR</td>
                 <td>Win / Mac conforme produto</td>
               </tr>
             </tbody>
           </table>
         </div>
-        <p class="compare-note reveal">*FreeShow e ProPresenter são referências internacionais. Holyrics é referência forte no Brasil. O SOMOSUM não “substitui tudo o que o Holyrics faz” — entrega um caminho gratuito, offline e alinhado a equipes que querem cultuar com paz no projetor.</p>
+        <p class="compare-note reveal">*FreeShow e ProPresenter são referências internacionais. Holyrics é referência forte no Brasil — o SOMOSUM não “substitui tudo o que o Holyrics faz”. Destacamos ordem pré-montada e quem senta no PC só projeta com as setas.</p>
       </div>
     </section>
 
@@ -306,19 +377,20 @@
       <div class="wrap">
         <div class="split">
           <div>
-            <p class="kicker reveal">No culto</p>
-            <h2 id="rec-title" class="reveal">O que a igreja vê — e o que a equipe controla</h2>
-            <p class="lead reveal">Hinários, Bíblia, mídia, pré-culto, ordem do culto e plugins. Tudo pensado para legibilidade de longe e ritmo de celebração.</p>
+            <p class="kicker reveal">Bibliotecas e Loja</p>
+            <h2 id="rec-title" class="reveal">Louvores, Mídia, hinários e plugins</h2>
+            <p class="lead reveal">Monte com o que a igreja já usa. No domingo, só avance.</p>
             <ul class="offer-grid">
-              <li class="reveal"><strong>Letras e hinários</strong><p>CC, HC e packs da Loja. Projeção clara para cantar junto.</p></li>
-              <li class="reveal"><strong>Bíblia na tela</strong><p>Versículos limpos na leitura, mensagem e resposta.</p></li>
-              <li class="reveal"><strong>Mídia e fundos</strong><p>Imagens e vídeos para ambientar louvor e avisos.</p></li>
-              <li class="reveal"><strong>Pré-culto</strong><p>Countdown e ambiente antes da abertura.</p></li>
-              <li class="reveal"><strong>Plugins do culto</strong><p>PIX, avisos, pedidos, QR, hino rápido e mais.</p></li>
-              <li class="reveal"><strong>Rede local</strong><p>Remote e Stage na LAN — sem depender da nuvem.</p></li>
+              <li class="reveal"><strong>Louvores</strong><p>Letra e cifra na biblioteca — adicione à ordem com duplo clique.</p></li>
+              <li class="reveal"><strong>Bíblia</strong><p>Versículos limpos na leitura e na mensagem.</p></li>
+              <li class="reveal"><strong>Mídia</strong><p>Fundos e vídeos para o clima do louvor.</p></li>
+              <li class="reveal"><strong>Cultos</strong><p>Assistente e templates — ordem pré-estabelecida.</p></li>
+              <li class="reveal"><strong>Loja</strong><p>Plugins (PIX, avisos…) e packs de hinário sob demanda.</p></li>
+              <li class="reveal"><strong>Stage 3 perfis</strong><p>Cantor, Músico e Pregador — cada um no seu layout.</p></li>
             </ul>
             <div class="cta-row" style="margin-top:1.5rem">
               <a class="btn btn-secondary" href="produto.html">Ver produto completo</a>
+              <a class="btn btn-secondary" href="experiencia.html">Abrir experiência</a>
             </div>
           </div>
           <div class="split-media reveal">
@@ -331,29 +403,30 @@
     <section class="section" id="passos" aria-labelledby="passos-title">
       <div class="wrap">
         <p class="kicker reveal">Começar</p>
-        <h2 id="passos-title" class="reveal">Quatro passos até o primeiro culto</h2>
-        <p class="lead reveal">Do download ao “Ao vivo” — sem mistério.</p>
+        <h2 id="passos-title" class="reveal">Do download ao domingo com setas</h2>
+        <p class="lead reveal">Monte e salve antes. No culto, só Ao vivo.</p>
         <div class="steps steps-4">
           <article class="step reveal">
             <h3>Baixe</h3>
-            <p>Instalador Setup ou ZIP portátil no Google Drive oficial.</p>
+            <p>Setup ou ZIP portátil no Google Drive oficial.</p>
           </article>
           <article class="step reveal">
-            <h3>Instale</h3>
-            <p>Windows 10/11 64 bits. WebView2 se o assistente pedir.</p>
+            <h3>Monte e salve</h3>
+            <p>Assistente de culto, Louvores, Mídia, Loja — ordem pronta.</p>
           </article>
           <article class="step reveal">
-            <h3>Monte a ordem</h3>
-            <p>Abra o Controle, organize louvores, Bíblia e mídia.</p>
+            <h3>Ao vivo ← →</h3>
+            <p>Checkbox Ao vivo + Anterior / Próximo. Sem remontar.</p>
           </article>
           <article class="step reveal">
-            <h3>Projete</h3>
-            <p>Ligue Ao vivo, abra a Projeção e, se quiser, Stage/Remote.</p>
+            <h3>Equipe</h3>
+            <p>Projeção, Stage (3 perfis) e Remote na LAN.</p>
           </article>
         </div>
         <div class="cta-row" style="margin-top:1.75rem">
           <a class="btn btn-primary" href="download.html">Ir para download</a>
           <a class="btn btn-secondary" href="como-usar.html">Guia de uso</a>
+          <a class="btn btn-secondary" href="experiencia.html">Experiência</a>
         </div>
       </div>
     </section>
@@ -376,10 +449,10 @@
         <div class="cta-band reveal">
           <p class="kicker">Pronto para a igreja</p>
           <h2 id="cta-title">Leve o SOMOSUM para o próximo culto</h2>
-          <p class="lead" style="margin-bottom:1.25rem">Gratuito para igrejas. Windows 10 e 11. Projeção, Stage e Remote — e a paz de cultuar offline.</p>
+          <p class="lead" style="margin-bottom:1.25rem">Monte uma vez. Projete com as setas. Stage e Remote na LAN — gratuito e offline.</p>
           <div class="cta-row">
             <a class="btn btn-primary btn-soft" href="download.html">Baixar SOMOSUM 8.7.10</a>
-            <a class="btn btn-secondary" href="versao.html">Notas da versão</a>
+            <a class="btn btn-secondary" href="experiencia.html">Ver experiência</a>
             <a class="btn btn-secondary" href="privacidade.html">Privacidade</a>
           </div>
           <p class="purpose-en">App purpose (English): SOMOSUM is a Windows desktop application for churches to project worship content (lyrics, Bible text, and media). It optionally uses Google Sign-In so the church can back up and restore SOMOSUM backup files to the user’s own Google Drive (drive.file scope — only files created by the app).</p>
@@ -397,6 +470,7 @@
         </div>
         <div class="footer-col">
           <h3>Produto</h3>
+          <a href="experiencia.html">Experiência</a>
           <a href="produto.html">O que oferece</a>
           <a href="como-usar.html">Como usar</a>
           <a href="versao.html">Versão 8.7.10</a>
@@ -414,10 +488,11 @@
       </div>
       <div class="footer-bottom">
         <span>© 2026 Rabbit Visual · SOMOSUM</span>
-        <span>Windows · Offline · Gratuito para igrejas</span>
+        <span>Windows · Offline · Ordem pré-pronta</span>
       </div>
     </div>
   </footer>
   <script src="assets/site.js" defer></script>
+  <script src="assets/demo.js" defer></script>
 </body>
 </html>
