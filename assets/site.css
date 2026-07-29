@@ -291,6 +291,22 @@ a:hover {
   animation: floaty 6s ease-in-out infinite;
 }
 
+/* Visível o bastante para o Google ler nome + finalidade; discreto no layout */
+.sr-purpose {
+  width: min(var(--max), calc(100% - 2rem));
+  margin: 0.75rem auto 0;
+  padding: 0.85rem 1rem;
+  border: 1px solid var(--line);
+  border-radius: 0.9rem;
+  background: rgba(255, 255, 255, 0.03);
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.sr-purpose p {
+  margin: 0.25rem 0;
+}
+
 .app-name-label {
   margin: 0 0 0.35rem;
   color: var(--coral-2);
