@@ -3,11 +3,16 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Como usar o SOMOSUM — guia simples</title>
-  <meta name="description" content="Passo a passo simples para instalar e usar o SOMOSUM no culto da sua igreja.">
+  <title>Como usar o SOMOSUM — guia rápido para o culto</title>
+  <meta name="description" content="Guia SOMOSUM: instalar, abrir Controle, montar ordem, Ao vivo, Projeção, Stage e Remote na LAN da igreja.">
+  <meta name="google-site-verification" content="nLejR0vznH-2jq-zF15tfKEdONbFsd5ylkOThsWnRHE">
   <meta name="theme-color" content="#09090b">
+  <meta property="og:title" content="Como usar o SOMOSUM">
+  <meta property="og:description" content="Do instalador ao primeiro culto — passo a passo.">
+  <meta property="og:image" content="https://rabbitvisual.github.io/somosum-site/assets/SOMOSUM.png">
+  <meta property="og:url" content="https://rabbitvisual.github.io/somosum-site/como-usar.html">
+  <link rel="canonical" href="https://rabbitvisual.github.io/somosum-site/como-usar.html">
   <link rel="icon" href="assets/favicon-64.png" type="image/png">
-  <link rel="icon" href="assets/SOMOSUM.png" type="image/png">
   <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,8 +29,9 @@
       <button class="nav-toggle" type="button" aria-label="Abrir menu" aria-expanded="false"><span></span><span></span><span></span></button>
       <nav class="nav" aria-label="Principal">
         <a href="index.html">Início</a>
-        <a href="produto.html">O que oferece</a>
+        <a href="produto.html">Produto</a>
         <a href="como-usar.html" aria-current="page">Como usar</a>
+        <a href="versao.html">Versão</a>
         <a href="download.html" class="nav-cta">Baixar</a>
       </nav>
     </div>
@@ -34,44 +40,52 @@
   <main>
     <section class="page-hero">
       <div class="wrap reveal">
-        <p class="kicker">Guia rápido</p>
+        <p class="kicker">Guia</p>
         <h1>Como usar o SOMOSUM</h1>
-        <p>Linguagem simples, sem termos técnicos. Se a igreja tem um computador e um projetor, já dá para começar.</p>
+        <p>Linguagem simples para o voluntário do domingo — do Setup ao “Ao vivo”.</p>
       </div>
     </section>
 
     <section class="section">
       <div class="wrap">
-        <div class="reveal">
-          <p class="kicker">Passo a passo</p>
-          <h2>Do download ao culto</h2>
-          <p class="lead">Siga nesta ordem na primeira vez. Depois, fica natural.</p>
-        </div>
-        <div class="steps reveal" style="grid-template-columns:1fr">
-          <article class="step">
-            <h3>Baixe e instale</h3>
-            <p>Na página de download, pegue o instalador oficial. Abra o arquivo no computador da igreja e siga a instalação até o fim.</p>
-          </article>
-          <article class="step">
-            <h3>Abra o SOMOSUM</h3>
-            <p>Inicie o programa. Você verá a área de quem opera o culto — é por ali que monta a ordem e avança o que aparece na tela.</p>
-          </article>
-          <article class="step">
-            <h3>Ligue o projetor</h3>
-            <p>Abra a tela de projeção no monitor ou projetor da congregação. A igreja passa a ver letras, Bíblia e mídia em tela cheia.</p>
-          </article>
-          <article class="step">
-            <h3>Monte o culto</h3>
-            <p>Escolha músicas, textos e mídias. Durante o culto, avance no momento certo — com calma e previsibilidade.</p>
-          </article>
-          <article class="step">
-            <h3>Se quiser, faça backup</h3>
-            <p>Existe um recurso opcional para guardar uma cópia de segurança no Google Drive da própria igreja. Você só usa se quiser — e sempre com a conta Google da igreja.</p>
-          </article>
-        </div>
-        <div class="cta-row reveal" style="margin-top:2rem">
-          <a class="btn btn-primary btn-soft" href="download.html">Ir para o download</a>
-          <a class="btn btn-secondary" href="mailto:r.rodriguesjs@gmail.com">Preciso de ajuda</a>
+        <ol class="version-list" style="list-style:none;counter-reset:guia">
+          <li class="reveal">
+            <strong>1. Baixe e instale</strong>
+            <p>Na página <a href="download.html">Baixar</a>, pegue o Setup (recomendado) ou o ZIP. No Windows 10/11 64 bits, execute o instalador. Se pedir WebView2, use o link da Microsoft. Confira os <a href="download.html#requisitos">requisitos mínimos</a>.</p>
+          </li>
+          <li class="reveal">
+            <strong>2. Abra o Controle</strong>
+            <p>Inicie o SOMOSUM. O Controle é onde você monta o culto: ordem, louvores, Bíblia, mídia e plugins.</p>
+          </li>
+          <li class="reveal">
+            <strong>3. Monte a ordem</strong>
+            <p>Adicione itens na sequência do culto. Ajuste tipografia e fundos se quiser. Salve o culto da igreja.</p>
+          </li>
+          <li class="reveal">
+            <strong>4. Ligue Ao vivo e a Projeção</strong>
+            <p>Ative a projeção ao vivo e abra a tela de Projeção no monitor/projetor. O que você avança no Controle aparece na congregação.</p>
+          </li>
+          <li class="reveal">
+            <strong>5. Stage no púlpito (opcional)</strong>
+            <p>Em outro monitor ou PC na mesma rede, abra o Stage para músicos e líderes acompanharem a letra sem poluir a tela da igreja.</p>
+          </li>
+          <li class="reveal">
+            <strong>6. Remote no celular (opcional)</strong>
+            <p>Na rede da igreja, abra o Remote (QR/URL do Painel). Avance slides, blank/logo e atalhos — útil para quem ajuda sem sentar no PC.</p>
+          </li>
+          <li class="reveal">
+            <strong>7. Plugins e Loja</strong>
+            <p>Em Ajustes / Loja, instale o que a igreja precisa (PIX, avisos, pedidos, etc.). Configure no Studio do plugin e projete quando chegar a hora.</p>
+          </li>
+          <li class="reveal">
+            <strong>8. Backup Google Drive (opcional)</strong>
+            <p>Não é necessário para cultuar. Se quiser cópia de segurança, ative o plugin de backup e autorize só os arquivos do app. Veja a <a href="privacidade.html">Privacidade</a>.</p>
+          </li>
+        </ol>
+        <div class="cta-row" style="margin-top:2rem">
+          <a class="btn btn-primary" href="download.html">Baixar agora</a>
+          <a class="btn btn-secondary" href="produto.html">Ver recursos</a>
+          <a class="btn btn-secondary" href="mailto:r.rodriguesjs@gmail.com?subject=SOMOSUM%20ajuda">Pedir ajuda</a>
         </div>
       </div>
     </section>
@@ -81,20 +95,20 @@
     <div class="wrap">
       <div class="footer-grid">
         <div class="footer-brand">
-          <img src="assets/SOMOSUM.png" width="56" height="56" alt="SOMOSUM">
-          <p>SOMOSUM — projeção para o culto da sua igreja. Feito com cuidado pela Rabbit Visual.</p>
+          <img src="assets/logo-nav.png" width="56" height="56" alt="SOMOSUM">
+          <p>SOMOSUM — projeção de culto local para igrejas.</p>
         </div>
         <div class="footer-col">
-          <h3>Conhecer</h3>
+          <h3>Produto</h3>
           <a href="produto.html">O que oferece</a>
           <a href="como-usar.html">Como usar</a>
+          <a href="versao.html">Versão</a>
           <a href="download.html">Baixar</a>
         </div>
         <div class="footer-col">
-          <h3>Informações</h3>
+          <h3>Legal</h3>
           <a href="privacidade.html">Privacidade</a>
-          <a href="termos.html">Termos de uso</a>
-          <a href="mailto:r.rodriguesjs@gmail.com">Suporte</a>
+          <a href="termos.html">Termos</a>
         </div>
         <div class="footer-col">
           <h3>Contato</h3>
@@ -102,8 +116,8 @@
         </div>
       </div>
       <div class="footer-bottom">
-        <span>© 2026 SOMOSUM · Rabbit Visual</span>
-        <span>Somos um</span>
+        <span>© 2026 Rabbit Visual · SOMOSUM</span>
+        <span>Guia para voluntários</span>
       </div>
     </div>
   </footer>

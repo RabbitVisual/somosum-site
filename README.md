@@ -1,22 +1,10 @@
-# SOMOSUM — site público
+# SOMOSUM — site oficial
 
-https://rabbitvisual.github.io/somosum-site/
+Site público do aplicativo **SOMOSUM** (GitHub Pages).
 
-## Páginas
+- Home: https://rabbitvisual.github.io/somosum-site/
+- Download: https://rabbitvisual.github.io/somosum-site/download.html
+- Privacidade: https://rabbitvisual.github.io/somosum-site/privacidade.html
+- Termos: https://rabbitvisual.github.io/somosum-site/termos.html
 
-| Página | URL |
-|---|---|
-| Início | `/` |
-| O que oferece | `/produto.html` |
-| Como usar | `/como-usar.html` |
-| Download | `/download.html` |
-| Privacidade | `/privacidade.html` |
-| Termos | `/termos.html` |
-
-## Logo oficial
-
-Sempre `view/IMG/LOGO/SOMOSUM.png` (PNG transparente) → `assets/SOMOSUM.png` e derivados.
-
-## Quando o Setup.exe estiver pronto
-
-Em `download.html`, troque o `href` e o texto do `#download-btn` pelo link do Drive.
+**Importante:** não remova `googlec51c0db37beba01b.html` — verificação Google Search Console / OAuth branding.
