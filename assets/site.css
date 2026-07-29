@@ -291,13 +291,45 @@ a:hover {
   animation: floaty 6s ease-in-out infinite;
 }
 
+.app-name-label {
+  margin: 0 0 0.35rem;
+  color: var(--coral-2);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
 .hero h1 {
   margin: 0 0 0.9rem;
   font-family: var(--font-display);
-  font-size: clamp(2.55rem, 7vw, 4.1rem);
+  font-size: clamp(2.8rem, 8vw, 4.6rem);
   font-weight: 600;
-  letter-spacing: -0.03em;
+  letter-spacing: 0.04em;
   line-height: 1.02;
+}
+
+.purpose-panel {
+  padding: clamp(1.5rem, 3.5vw, 2.4rem);
+  border-radius: 1.5rem;
+  border: 1px solid rgba(255, 140, 110, 0.3);
+  background:
+    radial-gradient(500px 240px at 0% 0%, rgba(255, 92, 92, 0.16), transparent 60%),
+    linear-gradient(160deg, #15151c, #0e0e12);
+  box-shadow: var(--shadow);
+}
+
+.purpose-panel .lead {
+  max-width: 52rem;
+}
+
+.purpose-en {
+  margin: 1.5rem 0 0;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 0.95rem;
+  max-width: 52rem;
 }
 
 .hero .lede {

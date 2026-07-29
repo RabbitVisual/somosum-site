@@ -3,12 +3,16 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>SOMOSUM — Projeção para o culto da sua igreja</title>
-  <meta name="description" content="SOMOSUM ajuda sua igreja a projetar letras, Bíblia e mídia no culto — simples, gratuito para igrejas e funciona mesmo sem internet.">
+  <title>SOMOSUM — aplicativo de projeção para cultos e backup no Google Drive</title>
+  <meta name="description" content="SOMOSUM é o aplicativo para igrejas projetarem o culto (letras, Bíblia e mídia) e, se quiserem, fazer backup seguro no Google Drive da própria igreja.">
   <meta name="theme-color" content="#09090b">
-  <meta property="og:title" content="SOMOSUM — Projeção para o culto">
-  <meta property="og:description" content="Tudo o que a equipe precisa para o culto na tela: letras, Bíblia, mídia e mais.">
+  <meta name="application-name" content="SOMOSUM">
+  <meta property="og:site_name" content="SOMOSUM">
+  <meta property="og:title" content="SOMOSUM — projeção para cultos">
+  <meta property="og:description" content="Aplicativo SOMOSUM: projeção de culto para igrejas e backup opcional no Google Drive do usuário.">
   <meta property="og:image" content="https://rabbitvisual.github.io/somosum-site/assets/SOMOSUM.png">
+  <meta property="og:url" content="https://rabbitvisual.github.io/somosum-site/">
+  <link rel="canonical" href="https://rabbitvisual.github.io/somosum-site/">
   <link rel="icon" href="assets/favicon-64.png" type="image/png" sizes="64x64">
   <link rel="icon" href="assets/SOMOSUM.png" type="image/png">
   <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
@@ -24,7 +28,7 @@
         <img src="assets/logo-nav.png" width="40" height="40" alt="SOMOSUM">
         <span class="brand-text">
           <strong>SOMOSUM</strong>
-          <small>Somos um</small>
+          <small>Aplicativo oficial</small>
         </span>
       </a>
       <button class="nav-toggle" type="button" aria-label="Abrir menu" aria-expanded="false">
@@ -32,6 +36,7 @@
       </button>
       <nav class="nav" aria-label="Principal">
         <a href="index.html" aria-current="page">Início</a>
+        <a href="#finalidade">Finalidade</a>
         <a href="produto.html">O que oferece</a>
         <a href="como-usar.html">Como usar</a>
         <a href="download.html" class="nav-cta">Baixar</a>
@@ -45,47 +50,77 @@
         <img src="assets/capa-hero.jpg" alt="" width="1408" height="768" fetchpriority="high">
       </div>
       <div class="wrap hero-inner">
-        <img class="hero-logo" src="assets/SOMOSUM.png" width="132" height="132" alt="SOMOSUM">
-        <h1 id="hero-title">A projeção do culto, do jeito que a igreja precisa</h1>
-        <p class="lede">Letras, Bíblia e mídia na tela — fácil de operar, feito para a equipe e gratuito para igrejas.</p>
+        <img class="hero-logo" src="assets/SOMOSUM.png" width="132" height="132" alt="Logo do aplicativo SOMOSUM">
+        <p class="app-name-label">Aplicativo</p>
+        <h1 id="hero-title">SOMOSUM</h1>
+        <p class="lede">O aplicativo SOMOSUM ajuda igrejas a projetar o culto (letras, Bíblia e mídia) e, se desejarem, a fazer backup dos dados no Google Drive da própria igreja com login Google.</p>
         <div class="cta-row">
           <a class="btn btn-primary btn-soft" href="download.html">
             <svg class="btn-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 3v12m0 0 4-4m-4 4-4-4M5 21h14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            Quero baixar
+            Baixar o SOMOSUM
           </a>
-          <a class="btn btn-secondary" href="produto.html">Ver o que oferece</a>
+          <a class="btn btn-secondary" href="#finalidade">Finalidade do app</a>
         </div>
-        <p class="hero-note">Para Windows · Uso livre para igrejas · Funciona sem internet</p>
+        <p class="hero-note">Nome do app: <strong>SOMOSUM</strong> · Gratuito para igrejas · Windows</p>
+      </div>
+    </section>
+
+    <section class="section" id="finalidade" aria-labelledby="finalidade-title">
+      <div class="wrap">
+        <div class="purpose-panel reveal">
+          <p class="kicker">Finalidade do aplicativo</p>
+          <h2 id="finalidade-title">Para que serve o SOMOSUM?</h2>
+          <p class="lead"><strong>SOMOSUM</strong> é um aplicativo desktop para igrejas. A finalidade principal é projetar o conteúdo do culto na tela (músicas, Bíblia e mídia). Também oferece um recurso opcional de <strong>backup no Google Drive</strong>: ao entrar com a conta Google, o SOMOSUM pode guardar e restaurar arquivos de backup apenas no Drive do usuário, para proteger os dados da igreja.</p>
+          <ul class="offer-grid">
+            <li>
+              <strong>Projeção do culto</strong>
+              <p>Mostrar letras, textos bíblicos e mídia para a congregação durante o culto.</p>
+            </li>
+            <li>
+              <strong>Operação pela equipe</strong>
+              <p>Quem opera o computador avança o culto com organização e clareza.</p>
+            </li>
+            <li>
+              <strong>Backup opcional no Google Drive</strong>
+              <p>Com login Google, o SOMOSUM salva cópias de segurança no Drive da igreja — só arquivos criados pelo app.</p>
+            </li>
+            <li>
+              <strong>Privacidade</strong>
+              <p>Os dados do culto ficam no computador; o Drive só é usado se a igreja autorizar. Veja a <a href="privacidade.html">Política de Privacidade</a>.</p>
+            </li>
+          </ul>
+          <p class="purpose-en"><strong>App purpose (English):</strong> SOMOSUM is a Windows desktop application for churches to project worship content (lyrics, Bible text, and media). It optionally uses Google Sign-In so the church can back up and restore SOMOSUM backup files to the user’s own Google Drive (drive.file scope — only files created by the app).</p>
+        </div>
       </div>
     </section>
 
     <section class="section" id="porque" aria-labelledby="porque-title">
       <div class="wrap split">
         <div class="reveal">
-          <p class="kicker">Por que baixar</p>
-          <h2 id="porque-title">Para o culto fluir com tranquilidade</h2>
-          <p class="lead">O SOMOSUM coloca na tela o que a congregação precisa ver — enquanto a equipe acompanha no ritmo do culto, sem complicação.</p>
+          <p class="kicker">Por que baixar o SOMOSUM</p>
+          <h2 id="porque-title">O culto na tela, com tranquilidade</h2>
+          <p class="lead">O aplicativo <strong>SOMOSUM</strong> coloca na tela o que a congregação precisa ver — enquanto a equipe acompanha o ritmo do culto.</p>
           <ul class="offer-grid">
             <li>
               <strong>Letras das músicas</strong>
-              <p>Projete hinários e canções com clareza para toda a igreja cantar junta.</p>
+              <p>Projete hinários e canções para toda a igreja cantar junta.</p>
             </li>
             <li>
               <strong>Bíblia na tela</strong>
-              <p>Mostre o texto bíblico no momento certo, de forma limpa e legível.</p>
+              <p>Mostre o texto bíblico no momento certo, limpo e legível.</p>
             </li>
             <li>
               <strong>Vídeos e imagens</strong>
-              <p>Fundos e mídias que ajudam a criar o clima da celebração.</p>
+              <p>Fundos e mídias para o clima da celebração.</p>
             </li>
             <li>
-              <strong>Sem depender da internet</strong>
-              <p>Instala no computador da igreja e o culto segue mesmo offline.</p>
+              <strong>Funciona sem internet</strong>
+              <p>Instala no PC da igreja; o culto segue mesmo offline. O Google só entra no backup opcional.</p>
             </li>
           </ul>
         </div>
         <div class="split-media reveal">
-          <img src="assets/ambiente-igreja.jpg" width="1903" height="733" alt="Igreja — ambiente de culto" loading="lazy">
+          <img src="assets/ambiente-igreja.jpg" width="1903" height="733" alt="Igreja — ambiente de culto com o aplicativo SOMOSUM" loading="lazy">
         </div>
       </div>
     </section>
@@ -93,30 +128,30 @@
     <section class="section" aria-labelledby="equipe-title">
       <div class="wrap">
         <div class="reveal">
-          <p class="kicker">Para a equipe</p>
+          <p class="kicker">No aplicativo SOMOSUM</p>
           <h2 id="equipe-title">Cada um no seu lugar</h2>
-          <p class="lead">Quem opera, quem vê no projetor, quem está no púlpito e quem ajuda pelo celular — todos alinhados.</p>
+          <p class="lead">Quem opera, quem vê no projetor, quem está no púlpito e quem ajuda pelo celular — alinhados no culto.</p>
         </div>
         <div class="roles reveal">
           <article class="role">
             <span class="mark">1</span>
             <h3>Quem opera</h3>
-            <p>Monta a ordem do culto e avança o que aparece na tela, com calma.</p>
+            <p>Monta a ordem do culto e avança o que aparece na tela.</p>
           </article>
           <article class="role">
             <span class="mark">2</span>
             <h3>A congregação</h3>
-            <p>Vê letras, versículos e mídia no projetor, grandes e claros.</p>
+            <p>Vê letras, versículos e mídia no projetor.</p>
           </article>
           <article class="role">
             <span class="mark">3</span>
             <h3>Púlpito</h3>
-            <p>Músicos e líderes acompanham a letra sem distrair quem está na plateia.</p>
+            <p>Músicos e líderes acompanham a letra em outra tela.</p>
           </article>
           <article class="role">
             <span class="mark">4</span>
             <h3>No celular</h3>
-            <p>A equipe pode acompanhar e ajudar pela rede da igreja.</p>
+            <p>A equipe pode acompanhar pela rede da igreja.</p>
           </article>
         </div>
       </div>
@@ -125,18 +160,18 @@
     <section class="section" aria-labelledby="comecar-title">
       <div class="wrap">
         <div class="reveal">
-          <p class="kicker">Começar é simples</p>
+          <p class="kicker">Começar com o SOMOSUM</p>
           <h2 id="comecar-title">Três passos até o primeiro culto</h2>
-          <p class="lead">Sem enrolação: baixe, instale e use no culto.</p>
+          <p class="lead">Baixe o aplicativo SOMOSUM, instale e use no culto.</p>
         </div>
         <div class="steps reveal">
           <article class="step">
-            <h3>Baixe no Windows</h3>
+            <h3>Baixe o SOMOSUM</h3>
             <p>Pegue o instalador oficial na página de download.</p>
           </article>
           <article class="step">
             <h3>Instale na igreja</h3>
-            <p>Abra o programa no computador que conecta no projetor.</p>
+            <p>Abra o aplicativo no computador ligado ao projetor.</p>
           </article>
           <article class="step">
             <h3>Projete o culto</h3>
@@ -144,8 +179,8 @@
           </article>
         </div>
         <div class="cta-row reveal" style="margin-top:2rem">
-          <a class="btn btn-primary" href="download.html">Ir para o download</a>
-          <a class="btn btn-secondary" href="como-usar.html">Ver como usar</a>
+          <a class="btn btn-primary" href="download.html">Baixar o SOMOSUM</a>
+          <a class="btn btn-secondary" href="como-usar.html">Como usar</a>
         </div>
       </div>
     </section>
@@ -154,21 +189,18 @@
       <div class="wrap">
         <div class="download-panel reveal">
           <div class="download-grid">
-            <img class="download-logo" src="assets/logo-hero.png" width="150" height="150" alt="">
+            <img class="download-logo" src="assets/logo-hero.png" width="150" height="150" alt="SOMOSUM">
             <div>
-              <p class="kicker">Download</p>
+              <p class="kicker">Download do aplicativo SOMOSUM</p>
               <h2 id="download-home-title">Leve o SOMOSUM para a sua igreja</h2>
-              <p class="lead" style="margin-bottom:1.2rem">Gratuito para igrejas. Feito para o culto. Quando o instalador estiver publicado, o botão libera o download oficial.</p>
+              <p class="lead" style="margin-bottom:1.2rem">Aplicativo gratuito para igrejas. Projeção de culto e backup opcional no Google Drive do usuário.</p>
               <div class="cta-row">
-                <a class="btn btn-primary btn-soft" href="download.html">
-                  <svg class="btn-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 3v12m0 0 4-4m-4 4-4-4M5 21h14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                  Página de download
-                </a>
-                <a class="btn btn-secondary" href="mailto:r.rodriguesjs@gmail.com">Falar conosco</a>
+                <a class="btn btn-primary btn-soft" href="download.html">Página de download do SOMOSUM</a>
+                <a class="btn btn-secondary" href="privacidade.html">Privacidade</a>
               </div>
               <div class="download-meta">
-                <span class="chip">Windows 10 e 11</span>
-                <span class="chip">Uso livre para igrejas</span>
+                <span class="chip">Nome do app: SOMOSUM</span>
+                <span class="chip">Windows</span>
                 <span class="chip">Rabbit Visual</span>
               </div>
             </div>
@@ -183,12 +215,13 @@
       <div class="footer-grid">
         <div class="footer-brand">
           <img src="assets/SOMOSUM.png" width="56" height="56" alt="SOMOSUM">
-          <p>SOMOSUM — projeção para o culto da sua igreja. Feito com cuidado pela Rabbit Visual.</p>
+          <p><strong>SOMOSUM</strong> — aplicativo de projeção para o culto e backup opcional no Google Drive. Rabbit Visual.</p>
         </div>
         <div class="footer-col">
-          <h3>Conhecer</h3>
+          <h3>SOMOSUM</h3>
+          <a href="index.html">Página inicial</a>
+          <a href="#finalidade">Finalidade do app</a>
           <a href="produto.html">O que oferece</a>
-          <a href="como-usar.html">Como usar</a>
           <a href="download.html">Baixar</a>
         </div>
         <div class="footer-col">
@@ -200,12 +233,12 @@
         <div class="footer-col">
           <h3>Contato</h3>
           <a href="mailto:r.rodriguesjs@gmail.com">r.rodriguesjs@gmail.com</a>
-          <a href="https://github.com/RabbitVisual/somosum-site">Site no GitHub</a>
+          <a href="https://rabbitvisual.github.io/somosum-site/">rabbitvisual.github.io/somosum-site</a>
         </div>
       </div>
       <div class="footer-bottom">
         <span>© 2026 SOMOSUM · Rabbit Visual</span>
-        <span>Somos um</span>
+        <span>Aplicativo SOMOSUM</span>
       </div>
     </div>
   </footer>
