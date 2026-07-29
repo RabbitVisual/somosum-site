@@ -155,7 +155,7 @@
         <h2 id="demo-title" class="reveal">Mini Controle + Projeção</h2>
         <p class="lead reveal">Clique ← → e veja a ordem e o slide mudarem — mock fiel às labels do console real.</p>
         <div class="demo-shell demo-dual reveal" data-demo-root style="margin-top:1.25rem">
-          <div class="demo-control" style="border:1px solid rgba(255,255,255,.08);border-radius:.75rem;overflow:hidden;min-height:280px">
+          <div class="demo-control">
             <aside class="demo-side" aria-hidden="true">
               <span class="is-on">LIVE</span>
               <span>CUL</span>
@@ -178,12 +178,16 @@
                 <button type="button" data-demo-next title="Próximo">→</button>
                 <label><input type="checkbox" checked disabled> Ao vivo</label>
               </div>
+              <div class="demo-meta-bar">
+                <strong>Item</strong>
+                <span data-demo-meta></span>
+              </div>
             </div>
           </div>
           <div class="demo-screen" aria-label="Projeção">
             <span class="label">Projeção</span>
             <h3 data-demo-screen-title></h3>
-            <p data-demo-screen-body style="white-space:pre-line"></p>
+            <p data-demo-screen-body></p>
           </div>
         </div>
         <div class="cta-row" style="margin-top:1.25rem">
