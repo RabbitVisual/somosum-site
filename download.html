@@ -88,6 +88,36 @@
       </div>
     </section>
 
+    <section class="section" id="verificacao" aria-labelledby="ver-title">
+      <div class="wrap">
+        <p class="kicker reveal">Segurança e verificação</p>
+        <h2 id="ver-title" class="reveal">Confirme que o arquivo é autêntico</h2>
+        <p class="lead reveal">O SOMOSUM é distribuído pela Rabbit Visual. Por ser um app novo e independente, o Windows SmartScreen pode exibir um aviso na primeira execução — é um <strong>falso positivo</strong>. Você pode conferir a integridade do arquivo pelo código SHA-256 abaixo.</p>
+        <div class="download-meta reveal" style="margin-bottom:1.25rem">
+          <span class="chip">SOMOSUM-Setup.exe</span>
+          <span class="chip">547 MB</span>
+          <span class="chip">SHA-256</span>
+        </div>
+        <p class="reveal" style="word-break:break-all;background:#111827;border:1px solid #1f2937;border-radius:10px;padding:.9rem 1rem;font-family:ui-monospace,Consolas,monospace;font-size:.9rem">
+          b9ce708cbb2a19b823584677cd0adfa08608d7c14e3023cf20afa353c8241f74
+        </p>
+        <div class="steps reveal" style="margin-top:1.5rem">
+          <article class="step">
+            <h3>1. Verifique o hash (opcional)</h3>
+            <p>No PowerShell, rode <code>Get-FileHash .\SOMOSUM-Setup.exe -Algorithm SHA256</code> e compare com o código acima. Se for igual, o arquivo é o oficial e não foi alterado.</p>
+          </article>
+          <article class="step">
+            <h3>2. Se aparecer o SmartScreen</h3>
+            <p>Clique em <strong>“Mais informações”</strong> e depois em <strong>“Executar assim mesmo”</strong>. O aviso some conforme mais igrejas instalam.</p>
+          </article>
+          <article class="step">
+            <h3>3. WebView2</h3>
+            <p>Se faltar, o próprio instalador oferece o link oficial da Microsoft. Sem ele, a projeção continua funcionando.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
     <section class="section" id="requisitos" aria-labelledby="req-title">
       <div class="wrap">
         <p class="kicker reveal">Antes de instalar</p>
