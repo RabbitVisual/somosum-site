@@ -1,17 +1,43 @@
 (() => {
+  const KEY = "somosum-theme";
   const header = document.querySelector(".site-header");
   const toggle = document.querySelector(".nav-toggle");
+  const themeBtn = document.querySelector("[data-theme-toggle]");
   const reveals = document.querySelectorAll(".reveal");
-  const heroBg = document.querySelector(".hero-bg img");
   const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+  const systemTheme = () =>
+    window.matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark";
+
+  const currentTheme = () =>
+    document.documentElement.getAttribute("data-theme") || systemTheme();
+
+  const paintTheme = (theme) => {
+    document.documentElement.setAttribute("data-theme", theme);
+    try {
+      localStorage.setItem(KEY, theme);
+    } catch (_) {
+      /* ignore */
+    }
+    const meta = document.querySelector('meta[name="theme-color"]');
+    if (meta) meta.content = theme === "light" ? "#f4efe6" : "#0c0b09";
+    if (themeBtn) {
+      const next = theme === "light" ? "escuro" : "claro";
+      themeBtn.setAttribute("aria-label", `Mudar para tema ${next}`);
+      themeBtn.title = `Tema ${next}`;
+      themeBtn.setAttribute("aria-pressed", theme === "dark" ? "true" : "false");
+    }
+  };
+
+  if (themeBtn) {
+    themeBtn.addEventListener("click", () => {
+      paintTheme(currentTheme() === "light" ? "dark" : "light");
+    });
+  }
 
   const onScroll = () => {
     if (!header) return;
-    header.classList.toggle("is-scrolled", window.scrollY > 12);
-    if (!reduceMotion && heroBg) {
-      const y = Math.min(window.scrollY, 420);
-      heroBg.style.transform = `scale(1.06) translate3d(0, ${y * 0.12}px, 0)`;
-    }
+    header.classList.toggle("is-scrolled", window.scrollY > 8);
   };
   onScroll();
   window.addEventListener("scroll", onScroll, { passive: true });
@@ -37,10 +63,11 @@
       if (!target) return;
       e.preventDefault();
       target.scrollIntoView({ behavior: reduceMotion ? "auto" : "smooth", block: "start" });
+      document.body.classList.remove("nav-open");
     });
   });
 
-  if ("IntersectionObserver" in window && reveals.length) {
+  if ("IntersectionObserver" in window && reveals.length && !reduceMotion) {
     const io = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
@@ -50,18 +77,13 @@
           }
         });
       },
-      { threshold: 0.12, rootMargin: "0px 0px -40px 0px" }
+      { threshold: 0.1, rootMargin: "0px 0px -32px 0px" }
     );
     reveals.forEach((el, i) => {
-      el.style.transitionDelay = `${Math.min(i % 6, 5) * 0.05}s`;
+      el.style.transitionDelay = `${Math.min(i % 8, 6) * 0.04}s`;
       io.observe(el);
     });
   } else {
     reveals.forEach((el) => el.classList.add("is-in"));
   }
-
-  document.querySelectorAll(".compare-table tbody tr").forEach((row) => {
-    row.addEventListener("mouseenter", () => row.classList.add("is-hot"));
-    row.addEventListener("mouseleave", () => row.classList.remove("is-hot"));
-  });
 })();
