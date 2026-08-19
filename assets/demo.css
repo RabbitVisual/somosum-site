@@ -5,7 +5,7 @@
   --demo-line: rgba(255, 255, 255, 0.1);
   --demo-gold: #e0d4a0;
   --demo-muted: rgba(246, 244, 241, 0.78);
-  --demo-coral: #ff6b5c;
+  --demo-coral: #d4af37;
   --demo-text: #f6f4f1;
   border-radius: 1.25rem;
   border: 1px solid var(--demo-line);
@@ -43,13 +43,13 @@
 
 .demo-tab:hover {
   color: #fff;
-  border-color: rgba(255, 140, 110, 0.4);
+  border-color: rgba(212, 175, 55, 0.45);
 }
 
 .demo-tab.is-active {
-  background: linear-gradient(135deg, #ff7a62, #e43d3d);
+  background: linear-gradient(135deg, #f0d78a, #d4af37 42%, #b8922a);
   border-color: transparent;
-  color: #fff;
+  color: #1a1408;
 }
 
 .demo-panel {
@@ -471,14 +471,14 @@
 
 .demo-remote-grid button.primary {
   grid-column: 1 / -1;
-  background: linear-gradient(135deg, #ff7a62, #e43d3d);
+  background: linear-gradient(135deg, #f0d78a, #d4af37 42%, #b8922a);
   border-color: transparent;
 }
 
 .demo-remote-grid button.warn {
   grid-column: 1 / -1;
   border-color: rgba(255, 140, 110, 0.4);
-  color: #ff8a6a;
+  color: #e8a090;
 }
 
 /* Flow steps */
@@ -507,8 +507,8 @@
   justify-content: center;
   border-radius: 999px;
   margin-bottom: 0.65rem;
-  background: linear-gradient(135deg, #ff7a62, #e43d3d);
-  color: #fff;
+  background: linear-gradient(135deg, #f0d78a, #d4af37 42%, #b8922a);
+  color: #1a1408;
   font-weight: 700;
   font-size: 0.8rem;
 }
