@@ -3,93 +3,98 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Novidades SOMOSUM 8.8.14 — por que atualizar</title>
-  <meta name="description" content="SOMOSUM 8.8.14: projetor no modo certo, letras nítidas, mensagem com quem prega e atualização para computador antigo da igreja.">
+  <title>SOMOSUM 8.8.32 — notas da versão</title>
+  <meta name="description" content="Notas da versão SOMOSUM 8.8.32: prévia espelhada com fundos animados, fallback estático em PC leve e polish de produção.">
   <meta name="google-site-verification" content="nLejR0vznH-2jq-zF15tfKEdONbFsd5ylkOThsWnRHE">
-  <meta name="theme-color" content="#0c0b09">
+  <meta name="theme-color" content="#09090b">
+  <meta property="og:title" content="SOMOSUM 8.8.32 — notas da versão">
+  <meta property="og:description" content="Prévia espelhada, fundos animados sincronizados e atualização delta pelo canal.">
+  <meta property="og:image" content="https://rabbitvisual.github.io/somosum-site/assets/SOMOSUM.png">
+  <meta property="og:url" content="https://rabbitvisual.github.io/somosum-site/versao.html">
   <link rel="canonical" href="https://rabbitvisual.github.io/somosum-site/versao.html">
   <link rel="icon" href="assets/favicon-64.png" type="image/png">
   <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/site.css?v=2">
-  <script>
-    (function () {
-      try {
-        var t = localStorage.getItem("somosum-theme");
-        if (t !== "light" && t !== "dark") {
-          t = matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark";
-        }
-        document.documentElement.setAttribute("data-theme", t);
-      } catch (e) {
-        document.documentElement.setAttribute("data-theme", "dark");
-      }
-    })();
-  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/site.css">
 </head>
 <body>
-  <a class="skip" href="#conteudo">Pular para o conteúdo</a>
   <header class="site-header">
     <div class="wrap">
       <a class="brand" href="index.html">
         <img src="assets/logo-nav.png" width="40" height="40" alt="SOMOSUM">
-        <span class="brand-text"><strong>SOMOSUM</strong><small>Projeção do culto</small></span>
+        <span class="brand-text"><strong>SOMOSUM</strong><small>Somos um</small></span>
       </a>
-      <div class="header-actions">
-        <button class="icon-btn" type="button" data-theme-toggle>
-          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
-          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 14.5A8.5 8.5 0 1 1 9.5 3 7 7 0 0 0 21 14.5z"/></svg>
-        </button>
-        <button class="nav-toggle" type="button" aria-label="Abrir menu" aria-expanded="false"><span></span><span></span><span></span></button>
-        <nav class="nav" aria-label="Principal">
-          <a href="index.html">Início</a>
-          <a href="produto.html">O programa</a>
-          <a href="como-usar.html">Como usar</a>
-          <a href="versao.html" aria-current="page">Novidades</a>
-          <a href="download.html" class="nav-cta">Baixar</a>
-        </nav>
-      </div>
+      <button class="nav-toggle" type="button" aria-label="Abrir menu" aria-expanded="false"><span></span><span></span><span></span></button>
+      <nav class="nav" aria-label="Principal">
+        <a href="index.html">Início</a>
+        <a href="experiencia.html">Experiência</a>
+        <a href="produto.html">Produto</a>
+        <a href="como-usar.html">Como usar</a>
+        <a href="versao.html" aria-current="page">Versão</a>
+        <a href="download.html" class="nav-cta">Baixar</a>
+      </nav>
     </div>
   </header>
 
-  <main id="conteudo">
+  <main>
     <section class="page-hero">
       <div class="wrap reveal">
-        <p class="kicker">Versão 8.8.14 · 19 de agosto de 2026</p>
-        <h1>Por que vale atualizar agora</h1>
-        <p>Se o SOMOSUM já está no PC: Ajuda → Verificar atualização. Se ainda não tem: baixe o instalador ou o ZIP (o link do instalador é sempre o mesmo).</p>
+        <p class="kicker">Release</p>
+        <h1>SOMOSUM 8.8.32</h1>
+        <p>Publicada em 22 de agosto de 2026 · Setup assinado · Windows 10/11 x64 · Prévia espelhada + pacote completo</p>
       </div>
     </section>
 
     <section class="section">
       <div class="wrap">
+        <p class="kicker reveal">Novidades 8.8.32</p>
+        <h2 class="reveal">O que muda para quem opera o culto</h2>
         <ul class="version-list">
           <li class="reveal">
-            <strong>A tela da igreja fica mais nítida</strong>
-            <p>Letra com contorno firme e tipos pensados para quem está longe. O que você escolhe no computador aparece igual no projetor.</p>
+            <strong>Prévia espelhada com fundos animados</strong>
+            <p>A prévia <em>Espelho em tempo real</em> mostra o <strong>mesmo fundo animado</strong> que vai para a Projeção — sem tela preta no meio do louvor. Boas-vindas, louvor e slides com vídeo de fundo sincronizam com o projetor.</p>
           </li>
           <li class="reveal">
-            <strong>O projetor usa o cabo “de verdade”</strong>
-            <p>HDMI ou VGA no modo do aparelho — menos faixa preta e menos imagem “esticada” ou pequena demais.</p>
+            <strong>PC mais leve? Imagem estática pareada</strong>
+            <p>Em computadores modestos, o fundo vira uma <strong>imagem estática</strong> que combina com o vídeo — a prévia não fica preta e o operador continua vendo o clima certo antes de enviar ao ar.</p>
           </li>
           <li class="reveal">
-            <strong>A mensagem apresenta quem prega</strong>
-            <p>Tema, versículo, frase, nome (pregador ou pregadora), de onde é e foto, em vários formatos de cartão.</p>
+            <strong>Polish de produção</strong>
+            <p>Modo economia não substitui mais a prévia por canvas preto quando há mídia de fundo. Caminhos de packs corrigidos, simulação do projetor não compete com o vídeo da prévia — menos surpresa na hora H do culto, vigília ou evento.</p>
           </li>
           <li class="reveal">
-            <strong>Computador antigo também chega nesta versão</strong>
-            <p>Quem instalou há tempo e nunca atualizou consegue subir. Quem já atualiza de pouco em pouco continua no ritmo seguro, um passo após o outro.</p>
-          </li>
-          <li class="reveal">
-            <strong>O domingo fica mais estável</strong>
-            <p>Escolher o louvor na ordem não trava o painel. Rede do celular desliga quando vocês pedem. Púlpito e celular acompanham sem piscar.</p>
+            <strong>Atualização delta pelo canal</strong>
+            <p>Quem já usa o SOMOSUM recebe o passo <strong>8.8.32</strong> por <strong>Ajuda → Verificar atualização</strong>, em pacote leve. Instalação nova: Setup ou ZIP portátil desta versão.</p>
           </li>
         </ul>
-        <div class="cta-row" style="margin-top:1.6rem">
-          <a class="btn btn-primary" href="download.html">Baixar 8.8.14</a>
-          <a class="btn btn-secondary" href="produto.html">Ver o programa inteiro</a>
+        <div class="cta-row" style="margin-top:2rem">
+          <a class="btn btn-primary" href="download.html">Baixar 8.8.32</a>
+          <a class="btn btn-secondary" href="experiencia.html">Ver demo espelhada</a>
+          <a class="btn btn-secondary" href="produto.html">Ver produto</a>
         </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap">
+        <p class="kicker reveal">Histórico recente</p>
+        <h2 class="reveal">Versões anteriores em destaque</h2>
+        <ul class="version-list">
+          <li class="reveal">
+            <strong>8.8.3 — Vídeo de fundo no bem-vindo</strong>
+            <p>Escolheu um vídeo para o fundo do slide de boas-vindas? Ele fica na prévia e no projetor. Overlay mais claro deixa o texto legível.</p>
+          </li>
+          <li class="reveal">
+            <strong>8.8.3 — Busca de cifra melhor</strong>
+            <p>Mais resultados aceitos e fallback automático na busca por HTML — igual ao “Buscar cifra” do editor.</p>
+          </li>
+          <li class="reveal">
+            <strong>8.8.3 — Atualização automática confiável</strong>
+            <p>Canal de delta corrigido: instalações antigas voltam a atualizar sozinhas até a versão mais recente.</p>
+          </li>
+        </ul>
       </div>
     </section>
   </main>
@@ -98,34 +103,33 @@
     <div class="wrap">
       <div class="footer-grid">
         <div class="footer-brand">
-          <img src="assets/logo-nav.png" width="48" height="48" alt="">
-          <p>SOMOSUM — projeção do culto no computador da igreja. Gratuito. Rabbit Visual.</p>
+          <img src="assets/logo-nav.png" width="56" height="56" alt="SOMOSUM">
+          <p>SOMOSUM — projeção de culto local para igrejas.</p>
         </div>
         <div class="footer-col">
-          <h3>Programa</h3>
-          <a href="produto.html">O que tem</a>
-          <a href="experiencia.html">Ver na prática</a>
+          <h3>Produto</h3>
+          <a href="experiencia.html">Experiência</a>
+          <a href="produto.html">O que oferece</a>
           <a href="como-usar.html">Como usar</a>
-          <a href="versao.html">Novidades 8.8.14</a>
+          <a href="versao.html">Versão</a>
+          <a href="download.html">Baixar</a>
         </div>
         <div class="footer-col">
-          <h3>Baixar</h3>
-          <a href="download.html">Instalador e ZIP</a>
-          <a href="download.html#requisitos">O que o PC precisa</a>
-        </div>
-        <div class="footer-col">
-          <h3>Igreja</h3>
+          <h3>Legal</h3>
           <a href="privacidade.html">Privacidade</a>
           <a href="termos.html">Termos</a>
-          <a href="mailto:r.rodriguesjs@gmail.com">E-mail de ajuda</a>
+        </div>
+        <div class="footer-col">
+          <h3>Contato</h3>
+          <a href="mailto:r.rodriguesjs@gmail.com">r.rodriguesjs@gmail.com</a>
         </div>
       </div>
       <div class="footer-bottom">
-        <span>© 2026 Rabbit Visual · SOMOSUM 8.8.14</span>
-        <span>Windows 10 e 11</span>
+        <span>© 2026 Rabbit Visual · SOMOSUM 8.8.32</span>
+        <span>Prévia espelhada · MIDI · PowerPoint</span>
       </div>
     </div>
   </footer>
-  <script src="assets/site.js?v=2" defer></script>
+  <script src="assets/site.js" defer></script>
 </body>
 </html>

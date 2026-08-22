@@ -5,6 +5,7 @@
       title: "Bem-vindos ao culto",
       body: "Que a paz de Cristo encha este lugar.",
       screen: "Bem-vindos ao culto",
+      hue: 248,
     },
     {
       type: "Louvor",
@@ -12,12 +13,14 @@
       body: "Grande é o Senhor e mui digno de ser louvado…",
       screen: "Grande é o Senhor\ne mui digno de ser louvado",
       chord: "G          D          Em\nGrande é o Senhor e mui digno…",
+      hue: 18,
     },
     {
       type: "Bíblia",
       title: "João 3:16",
       body: "Porque Deus amou o mundo de tal maneira…",
       screen: "João 3:16\nPorque Deus amou o mundo…",
+      hue: 210,
     },
     {
       type: "Mensagem",
@@ -25,6 +28,7 @@
       body: "Roteiro do pregador no teleponto do Stage.",
       screen: "Fidelidade de Deus",
       tele: "1. Introdução — fidelidade no cotidiano\n2. Texto — Lamentações 3:22-23\n3. Aplicação — confiança na graça",
+      hue: 280,
     },
   ];
 
@@ -33,6 +37,18 @@
 
   const $ = (sel, root = document) => root.querySelector(sel);
   const $$ = (sel, root = document) => [...root.querySelectorAll(sel)];
+
+  function applyMirrorHue(hue) {
+    $$("[data-demo-root]").forEach((root) => {
+      root.style.setProperty("--demo-mirror-hue", String(hue));
+    });
+  }
+
+  function toggleMirrorBlank(isBlank) {
+    $$(".demo-preview, .demo-screen").forEach((el) => {
+      el.classList.toggle("is-blank", isBlank);
+    });
+  }
 
   function renderOrder(root) {
     const list = $("[data-demo-order]", root);
@@ -68,7 +84,9 @@
       el.textContent = blank ? "" : item.screen || item.body;
     });
     $$("[data-demo-meta]").forEach((el) => {
-      el.textContent = blank ? "Overlay: blank" : `${index + 1}/${ORDER.length} · ${item.type}`;
+      el.textContent = blank
+        ? "Overlay: blank"
+        : `${index + 1}/${ORDER.length} · ${item.type} · fundo espelhado`;
     });
     $$("[data-demo-lyrics]").forEach((el) => {
       el.textContent = blank ? "—" : item.screen || item.body;
@@ -82,6 +100,9 @@
     $$("[data-demo-remote-now]").forEach((el) => {
       el.textContent = blank ? "Tela preta" : item.title;
     });
+
+    applyMirrorHue(blank ? 0 : item.hue ?? 260);
+    toggleMirrorBlank(blank);
 
     document.querySelectorAll("[data-demo-root]").forEach((root) => {
       renderOrder(root);
@@ -121,7 +142,6 @@
 
   document.querySelectorAll("[data-demo-tabs]").forEach((wrap) => {
     const tabs = wrap.querySelectorAll("[data-demo-tab]");
-    const panels = document.querySelectorAll(wrap.dataset.demoTabs || "[data-demo-panel]");
     tabs.forEach((tab) => {
       tab.addEventListener("click", () => {
         const id = tab.dataset.demoTab;
